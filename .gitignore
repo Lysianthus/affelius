@@ -4,5 +4,3 @@ src
 *.ini
 *.sublime-project
 *.sublime-workspace
-/index.php
-/test.php
