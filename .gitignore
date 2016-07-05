@@ -1,0 +1,8 @@
+dist
+src
+*.db
+*.ini
+*.sublime-project
+*.sublime-workspace
+/index.php
+/test.php

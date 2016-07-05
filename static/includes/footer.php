@@ -1,0 +1,94 @@
+
+		<footer id="footer">
+			<div class="footer-blocks">
+				<div class="footer-block">
+					<h4 class="footer-block__heading">About</h4>
+					<nav class="footer-block__menu">
+						<ul>
+							<li><a href="<?php echo af_affelius_path; ?>about/">Affelius</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>about/lysianthus">Lysianthus</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>about/versions">Versions</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>about/herstory">Herstory</a></li>
+						</ul>
+					</nav> <!-- .footer-block__menu -->
+				</div> <!-- .footer-block -->
+				<div class="footer-block">
+					<h4 class="footer-block__heading">Linkage</h4>
+					<nav class="footer-block__menu">
+						<ul>
+							<li><a href="<?php echo af_affelius_path; ?>linkage/">Affiliates</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>linkage/out">Links Exchange</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>linkage/listings">Listings and Rotations</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>linkage/in">Banners and Buttons</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>linkage/rules">Linkage Rules</a></li>
+						</ul>
+					</nav> <!-- .footer-block__menu -->
+				</div> <!-- .footer-block -->
+				<div class="footer-block">
+					<h4 class="footer-block__heading">More</h4>
+					<nav class="footer-block__menu">
+						<ul>
+							<li><a href="<?php echo af_affelius_path; ?>docs/services">Services</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>docs/faq">Frequently Asked Questions</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>docs/credits">Credits and Resources</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>docs/terms">Terms of Use</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>docs/disclaimer">Disclaimer</a></li>
+						</ul>
+					</nav> <!-- .footer-block__menu -->
+				</div> <!-- .footer-block -->
+				<div class="footer-block">
+					<h4 class="footer-block__heading">Even More</h4>
+					<nav class="footer-block__menu">
+						<ul>
+							<li><a href="<?php echo af_affelius_path; ?>news/">News Archive</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>contests/">Contests</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>specials/">Specials</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>docs/sitemap">Sitemap</a></li>
+					</nav> <!-- .footer-block__menu -->
+				</div> <!-- .footer-block -->
+			</div> <!-- .footer-blocks -->
+			<div class="footer-blocks">
+				<div class="footer-block">
+					<h4 class="footer-block__heading align-center">Affiliates</h4>
+					<nav class="footer-block__menu align-center">
+						<ul>
+							<li><a target="_blank" href="http://daily-lovejuice.net"><span data-title="Saori">Daily Lovejuice</span></a></li>
+							<li><a target="_blank" href="http://ellipsis.three-words.net"><span data-title="Satine">Ellipsis</span></a></li>
+							<li><a target="_blank" href="http://otaku-junk.com"><span data-title="Miria">Otaku Junk</span></a></li>
+							<li><a target="_blank" href="http://reverie.dragonebula.net"><span data-title="Alex">Resplendent Reverie</span></a></li>
+							<li><a target="_blank" href="http://vizune.com"><span data-title="Sasha">Vizune</span></a></li>
+						</ul>
+					</nav> <!-- .footer-block -->
+				</div> <!-- .footer-block -->
+				<div class="footer-block">
+					<h4 class="footer-block__heading align-center"><span class="fa fa-speaker"></span> Shout for Joy!</h4>
+					<div id="cboxdiv" style="text-align: center; line-height: 0">
+					<div><iframe frameborder="0" width="300" style="max-width: 100%;" height="100" src="https://www2.cbox.ws/box/?boxid=2296333&amp;boxtag=4fltw0&amp;sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain2-2296333" style="border:#CCCCCC 1px solid;" id="cboxmain2-2296333"></iframe></div>
+					<div><iframe frameborder="0" width="300" style="max-width: 100%;" height="82" src="https://www2.cbox.ws/box/?boxid=2296333&amp;boxtag=4fltw0&amp;sec=form" marginheight="2" marginwidth="2" scrolling="no" allowtransparency="yes" name="cboxform2-2296333" style="border:#CCCCCC 1px solid;border-top:0px" id="cboxform2-2296333"></iframe></div>
+					</div>
+					<p class="align-center">Be kind to everyone. &bull; Use the contact form for linkage applications and requests.</p>
+				</div> <!-- .footer-block -->
+				<div class="footer-block">
+					<h4 class="footer-block__heading align-center">Affelius on Twitter</h4>
+					<!-- Insert Twitter feed code -->
+				</div> <!-- .footer-block -->
+			</div> <!-- .footer-blocks -->
+			<div id="colophon">
+				<p>Copyright &copy; 2013-<?php date_default_timezone_set('Asia/Manila'); echo date("Y"); ?> Affelius &bull; <a href="<?php echo af_affelius_path; ?>about/versions">Affelius v4 &ldquo;Borders&rdquo;</a> &bull; Under the <a target="_blank" href="http://asclaria.org">Asclaria</a> Umbrella</p>
+			</div> <!-- #colophon -->
+		</footer> <!-- #footer -->
+
+		<footer id="scrop">
+			<a data-scroll href="#wrapper"><span class="fa fa-chevron-up"></span></a>
+		</footer> <!-- #scrop -->
+	</main> <!-- #wrapper -->
+
+	<script src="<?php echo af_affelius_path; ?>assets/js/lib/jquery-2.1.4.min.js"></script>
+	<!-- build:js assets/js/affelius.js -->
+	<script src="<?php echo af_affelius_path; ?>assets/js/lib/smooth-scroll.min.js"></script>
+	<script src="<?php echo af_affelius_path; ?>assets/js/affelius.js"></script>
+	<!-- endbuild -->
+	<script id="dsq-count-scr" src="//afffelius.disqus.com/count.js" async></script>
+</body>
+
+</html>

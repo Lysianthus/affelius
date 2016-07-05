@@ -1,0 +1,41 @@
+RewriteEngine on
+
+# Remove PHP extensions
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Rewrite URLs
+
+RewriteRule ^docs/statistics$ statistics.php [L]
+RewriteRule ^(about|docs|linkage|news|oops|contests|specials)/([^/]+)/?$ read.php?cat=$1&slug=$2 [L]
+RewriteRule ^writings/([^/]+)/([0-9]+)/?$ read.php?cat=writings&subcat=$1&page=$2 [L]
+RewriteRule ^writings/([^/]+)/([^/]+)/?$ read.php?cat=writings&subcat=$1&slug=$2 [L]
+RewriteRule ^writings/([^/]+)/?$ read.php?cat=writings&subcat=$1 [L]
+RewriteRule ^(about|docs|linkage|news|contests|specials)/?$ read.php?cat=$1 [L]
+
+RewriteRule ^graphics/([^/]+)/([^/]+)/?$ preview.php?cat=graphics&subcat=$1&slug=$2 [L]
+RewriteRule ^(designs|resources|tools|labs)/([^/]+)/([^/]+)/?$ live.php?cat=$1&subcat=$2&slug=$3 [L]
+RewriteRule ^(graphics|designs|resources|tools|labs)/([^/]+)/?$ show.php?cat=$1&subcat=$2 [L]
+RewriteRule ^(writings|graphics|designs|resources|tools|labs)/?$ cats.php?cat=$1 [L]
+
+RewriteRule ^\+download/(graphics|resources|tools)/([^/]+)/([^/]+)$ content/showcase/$1/$3 [L]
+RewriteRule ^\+download/designs/([^/]+)/([^/]+)$ content/showcase/designs/___download/$2 [L]
+
+RewriteRule ^\+smilies/(.*)$ content/auxiliaries/smilies/$1 [L]
+
+RewriteRule ^contests/([^/]+)/(.*)$ content/extra/contests/$1/$2 [L]
+RewriteRule ^specials/([^/]+)/(.*)$ content/extra/specials/$1/$2 [L]
+
+RewriteRule ^(calling|bitterness|autobiography|geometric|serif|text|first|fun|highlight|cat)$ content/extra/contests/hidden-pages/page.php?w=$1 [L]
+
+# Errors
+
+ErrorDocument 404 http://affeli.us/oops/404
+ErrorDocument 403 http://affeli.us/oops/403
+ErrorDocument 500 http://affeli.us/oops/500
+
+# Other
+
+Options All -Indexes
