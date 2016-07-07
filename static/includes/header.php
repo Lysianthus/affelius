@@ -10,6 +10,7 @@
 	<link rel="shortcut icon" href="<?php echo af_affelius_path; ?>assets/images/favicon.ico" />
 	
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/lib/prism.css" />
 	
 	<!-- build:css assets/css/typefaces.css -->
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/flaticon.css" />
@@ -61,16 +62,6 @@
 						<li><a href="<?php echo af_affelius_path; ?>writings/fan-fiction/">Fan Fiction</a></li>
 						<li><a href="<?php echo af_affelius_path; ?>writings/short-stories/">Short Stories</a></li>
 						<li><a href="<?php echo af_affelius_path; ?>writings/novels/">Novels</a></li>
-					</ul> <!-- .showcase-menu__item__list -->
-				</li> <!-- .showcase-menu__item -->
-				<li class="showcase-menu__item">
-					<div class="showcase-menu__item__heading">
-						<span class="flaticon-flower10"></span>
-						<b>Graphics</b>
-					</div> <!-- .showcase-menu__item__heading -->
-					<ul class="showcase-menu__item__list">
-						<li><a href="<?php echo af_affelius_path; ?>graphics/avatars/">Avatars</a></li>
-						<li><a href="<?php echo af_affelius_path; ?>graphics/patterns/">Patterns</a></li>
 					</ul> <!-- .showcase-menu__item__list -->
 				</li> <!-- .showcase-menu__item -->
 				<li class="showcase-menu__item">
