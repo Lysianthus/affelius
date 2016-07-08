@@ -64,7 +64,7 @@ inc_header();
 					</article> <!-- .article -->
 <?php
 
-					endwhile;
+				endwhile;
 
 ?>
 				</div> <!-- .articles -->
