@@ -1,6 +1,6 @@
 # Affelius
 
-Affelius is Lysianthus's creative repository.
+Affelius is Lysianthus’s creative repository.
 
 [Live](https://affeli.us)
 
