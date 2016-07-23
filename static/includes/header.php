@@ -12,14 +12,8 @@
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/lib/prism.css" />
 	
-	<!-- build:css assets/css/typefaces.css -->
-	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/flaticon.css" />
-	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/mercury.css" />
-	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/sentinel.css" />
-	<!-- endbuild -->
-	<!-- build:css assets/css/affelius.css -->
-	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/affelius.css" />
-	<!-- endbuild -->
+	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/typefaces-86efe3f325.css" />
+	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/affelius-5c67638fbf.css" />
 </head>
 
 <body>

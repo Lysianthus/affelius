@@ -8,7 +8,7 @@ inc_header();
 
 		<main id="content">
 			<div class="showcase">
-				<h1 class="heading showcase__heading"><span>Latest on the Showcase</span></h1>
+				<h1 class="heading"><span>Latest on the Showcase</span></h1>
 				<div class="showcase__grid">
 <?php
 
@@ -35,7 +35,7 @@ inc_header();
 			</div> <!-- .showcase -->
 
 			<div class="posts">
-				<h1 class="heading posts__heading"><span>Latest News and Updates</span></h1>
+				<h1 class="heading"><span>Latest News and Updates</span></h1>
 				<div class="articles">
 <?php
 
@@ -91,7 +91,7 @@ inc_header();
 			</div> <!-- .quick-feed -->
 
 			<div class="showcase">
-				<h1 class="heading showcase__heading"><span>Latest on the Playground</span></h1>
+				<h1 class="heading"><span>Latest on the Playground</span></h1>
 				<div class="showcase__grid">
 <?php
 

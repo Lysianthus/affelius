@@ -8,8 +8,8 @@ inc_header();
 
 		<main id="content">
 			<div class="showcase">
-				<h1 class="heading showcase__heading" data-description="Highly customizable website templates"><span>Designs <span class="fa fa-angle-right"></span> Design Concepts</span></h1>
-				<h2 class="showcase__subheading">Old and rejected designs that are no longer supported</h2>
+				<h1 class="heading" data-description="Highly customizable website templates"><span>Designs <span class="fa fa-angle-right"></span> Design Concepts</span></h1>
+				<h2 class="subheading">Old and rejected designs that are no longer supported</h2>
 				<article class="showcase__blurb">
 					<h3 class="showcase__blurb__heading">Things to Remember</h3>
 					<div class="showcase__blurb__content">
@@ -79,8 +79,8 @@ inc_header();
 			</div> <!-- .showcase -->
 
 			<div class="showcase">
-				<h1 class="showcase__heading"><span>Designs</span></h1>
-				<h2 class="showcase__subheading">All the subcategories</h2>
+				<h1 class="heading"><span>Designs</span></h1>
+				<h2 class="subheading">All the subcategories</h2>
 				<ul class="subcategory__list">
 					<li class="subcategory">
 						<a href="">
@@ -105,7 +105,7 @@ inc_header();
 
 			
 			<div class="posts">
-				<h1 class="heading posts__heading"><span>Latest News and Updates</span></h1>
+				<h1 class="heading"><span>Latest News and Updates</span></h1>
 				<div class="articles">
 					<article class="article">
 						<div class="article__meta">

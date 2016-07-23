@@ -8,8 +8,8 @@ inc_header();
 
 		<main id="content">
 			<div class="showcase">
-				<h1 class="heading showcase__heading"><span><?php $heading = get_heading(); echo $heading; ?></span></h1>
-				<h2 class="showcase__subheading"><?php $info = get_subcat_info(); echo $info; ?></h2>
+				<h1 class="heading"><span><?php $heading = get_heading(); echo $heading; ?></span></h1>
+				<h2 class="subheading"><?php $info = get_subcat_info(); echo $info; ?></h2>
 				<article class="showcase__blurb">
 					<h3 class="showcase__blurb__heading">Things to Remember</h3>
 					<div class="showcase__blurb__content">

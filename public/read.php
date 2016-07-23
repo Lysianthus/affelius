@@ -8,7 +8,7 @@ inc_header();
 
 		<main id="content">
 			<div class="posts">
-				<h1 class="heading posts__heading"><span><?php $heading = get_heading(); echo $heading; ?></span></h1>
+				<h1 class="heading"><span><?php $heading = get_heading(); echo $heading; ?></span></h1>
 				<div class="articles">
 <?php
 
