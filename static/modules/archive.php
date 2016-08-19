@@ -109,6 +109,10 @@ function archive($row) {
 			$content = substr($row['ar_content'], 0, strpos($row['ar_content'], '</p>'));
 			$content .= "\n<p><a class=\"read-more\" href=\"".$link."\">Continue reading <span class=\"fa fa-chevron-right\"></span></a></p>";
 			break;
+
+		case false:
+			$content = $row['ar_content'];
+			break;
 		
 		default:
 			$content = $row['ar_content'];
