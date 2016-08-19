@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="theme-color" content="#855741" />
 	<meta name="description" content="Affelius is Lysianthus's creative repository, which showcases writings, designs, resources, tools, and labs." />
+	<meta property="og:title" content="Affelius" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://affeli.us" />
+	<meta property="og:description" content="Affelius is Lysianthus's creative repository, which showcases writings, designs, resources, tools, and labs." />
 
 	<title><?php $title = get_title(); echo $title; ?></title>
 
