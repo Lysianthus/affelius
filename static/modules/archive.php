@@ -137,7 +137,7 @@ function get_latest_news() {
 function get_latest_writings() {
 	$dbh = connect_to_db();
 
-	$query = "SELECT `c`.`cat_name`, `c`.`cat_slug`, `s`.`subcat_name`, `s`.`subcat_slug`, `ar`.* FROM `categories` AS `c`, `subcategories` AS `s`, `archive` AS `ar` WHERE `ar`.`ar_cat` = 5 AND `ar`.`ar_subcat` = `s`.`subcat_id` AND `s`.`cat_id` = `c`.`cat_id` ORDER BY `ar_date` DESC LIMIT 0,5";
+	$query = "SELECT `c`.`cat_name`, `c`.`cat_slug`, `s`.`subcat_name`, `s`.`subcat_slug`, `ar`.* FROM `categories` AS `c`, `subcategories` AS `s`, `archive` AS `ar` WHERE `ar`.`ar_cat` = 5 AND `ar`.`ar_privacy` = 'public' AND `ar`.`ar_subcat` = `s`.`subcat_id` AND `s`.`cat_id` = `c`.`cat_id` ORDER BY `ar_date` DESC LIMIT 0,5";
 	$sth = $dbh->query($query);
 	$sth->setFetchMode(PDO::FETCH_ASSOC);
 
