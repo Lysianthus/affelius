@@ -47,9 +47,12 @@ include 'static/init.php';
 
 ?>
 
-	<main id="content" <?php if ($download == 1) : ?> class="with-bar" <?php endif; ?> >
+	<main id="content" <?php if ($download == 1) : ?> class="with-bar" <?php else : ?> class="without-bar" <?php endif; ?> >
 		<iframe src="<?php echo $iframe; ?>"></iframe>
 	</main> <!-- #content -->
+
+	<script src="<?php echo af_affelius_path; ?>assets/js/lib/jquery-2.1.4.min.js"></script>
+	<script src="<?php echo af_affelius_path; ?>assets/js/affelius-209a68d844.js"></script>
 </body>
 
 </html>
