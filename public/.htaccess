@@ -8,7 +8,6 @@ RewriteRule ^(.*)$ $1.php [L]
 
 # Rewrite URLs
 
-RewriteRule ^docs/statistics$ statistics.php [L]
 RewriteRule ^(about|docs|linkage|news|oops|contests|specials)/([^/]+)/?$ read.php?cat=$1&slug=$2 [L]
 RewriteRule ^writings/([^/]+)/page/([0-9]+)/?$ read.php?cat=writings&subcat=$1&page=$2 [L]
 RewriteRule ^writings/([^/]+)/([^/]+)/?$ read.php?cat=writings&subcat=$1&slug=$2 [L]

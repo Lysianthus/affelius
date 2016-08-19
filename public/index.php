@@ -47,7 +47,7 @@ inc_header();
 ?>
 					<article class="article">
 						<div class="article__meta">
-							<?php if ($type == article) : ?>
+							<?php if ($type == 'article') : ?>
 							<p class="article__date"><span class="fa fa-calendar"></span> <?php echo $date ?></p>
 							<p class="article__author"><span class="fa fa-pencil"></span> Penned by <?php echo $author; ?></p>
 							<?php endif; ?>
