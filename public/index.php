@@ -42,7 +42,7 @@ inc_header();
 				$sth = get_latest_news();
 
 				while ($row = $sth->fetch()) :
-					list($id, $cat_name, $cat_slug, $subcat_name, $subcat_slug, $type, $subject, $slug, $author, $date, $icon, $content, $comments, $link, $disqus) = archive($row);
+					list($id, $cat_name, $cat_slug, $subcat_name, $subcat_slug, $type, $privacy, $subject, $slug, $author, $date, $icon, $content, $comments, $link, $disqus) = archive($row);
 
 ?>
 					<article class="article">
@@ -78,7 +78,7 @@ inc_header();
 					$sth = get_latest_writings();
 
 					while ($row = $sth->fetch()) :
-						list($id, $cat_name, $cat_slug, $subcat_name, $subcat_slug, $type, $subject, $slug, $author, $date, $icon, $content, $comments, $link, $disqus) = archive($row);
+						list($id, $cat_name, $cat_slug, $subcat_name, $subcat_slug, $type, $privacy, $subject, $slug, $author, $date, $icon, $content, $comments, $link, $disqus) = archive($row);
 
 ?>
 					<li><?php echo $subcat_name; ?> / <a href="<?php echo $link; ?>"><?php echo $subject; ?></a> / <?php echo $date; ?></li>

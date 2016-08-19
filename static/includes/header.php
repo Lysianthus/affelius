@@ -4,16 +4,20 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#BF43EA" />
+	<meta name="description" content="Affelius is Lysianthus's creative repository, which showcases writings, designs, resources, tools, and labs." />
 
 	<title><?php $title = get_title(); echo $title; ?></title>
 
 	<link rel="shortcut icon" href="<?php echo af_affelius_path; ?>assets/images/favicon.ico" />
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Hasklig" rel="stylesheet" />
 	
-	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/lib/prism.css" />
 	
-	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/typefaces-86efe3f325.css" />
-	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/affelius-5c67638fbf.css" />
+	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/typefaces-2dee79445b.css" />
+	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/affelius-33fd760d80.css" />
 </head>
 
 <body>
@@ -21,7 +25,7 @@
 		<nav id="main-menu" class="main-menu">
 			<ul id="sitely-menu" class="sitely-menu">
 				<li><a href="<?php echo af_affelius_path; ?>about/">About</a></li>
-				<li><a href="<?php echo af_affelius_path; ?>docs/services">Services</a></li>
+				<li><a href="<?php echo af_affelius_path; ?>about/services">Services</a></li>
 				<li><a href="<?php echo af_affelius_path; ?>linkage/">Linkage</a></li>
 				<li><a href="<?php echo af_affelius_path; ?>contact">Contact</a></li>
 			</ul> <!-- #sitely menu .sitely-menu -->
@@ -38,7 +42,7 @@
 					</div> <!-- .showcase-menu__item__heading -->
 					<ul class="showcase-menu__item__list">
 						<li><a href="<?php echo af_affelius_path; ?>about/">About</a></li>
-						<li><a href="<?php echo af_affelius_path; ?>docs/services">Services</a></li>
+						<li><a href="<?php echo af_affelius_path; ?>about/services">Services</a></li>
 						<li><a href="<?php echo af_affelius_path; ?>linkage/">Linkage</a></li>
 						<li><a href="<?php echo af_affelius_path; ?>contact">Contact</a></li>
 					</ul> <!-- .showcase-menu__item__list -->
@@ -121,6 +125,7 @@
 					<li><a target="_blank" href="https://twitter.com/affelius"><span class="fa fa-twitter"></span></a></li>
 					<li><a target="_blank" href="https://github.com/Lysianthus/affelius"><span class="fa fa-github"></span></a></li>
 					<li><a target="_blank" href="http://asclaria.org"><span class="fa fa-umbrella"></span></a></li>
+					<li><a target="_blank" href="http://lysianth.us"><span class="fa fa-user"></span></a></li>
 				</ul> <!-- .social-menu__list -->
 			</nav> <!-- #social -->
 		</header> <!-- #header -->

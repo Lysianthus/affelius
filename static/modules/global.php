@@ -53,7 +53,15 @@ function get_title() {
 	$dbh = connect_to_db();
 
 	if ( !empty($get_cat) && !empty($get_subcat) && !empty($get_slug) ) { // item page
-		$query = "SELECT `c`.`cat_name`, `s`.`subcat_name`, `a`.`ar_subject` FROM `categories` AS `c`, `subcategories` AS `s`, `archive` AS `a` WHERE `a`.`ar_subcat` = `s`.`subcat_id` AND `s`.`cat_id` = `c`.`cat_id` AND `c`.`cat_slug` = :get_cat AND `s`.`subcat_slug` = :get_subcat AND `a`.`ar_slug` = :get_slug";
+		switch ($get_cat) {
+			case 'writings':
+				$query = "SELECT `c`.`cat_name`, `s`.`subcat_name`, `a`.`ar_subject` FROM `categories` AS `c`, `subcategories` AS `s`, `archive` AS `a` WHERE `a`.`ar_subcat` = `s`.`subcat_id` AND `s`.`cat_id` = `c`.`cat_id` AND `c`.`cat_slug` = :get_cat AND `s`.`subcat_slug` = :get_subcat AND `a`.`ar_slug` = :get_slug";
+				break;
+			
+			default:
+				$query = "SELECT `c`.`cat_name`, `c`.`cat_slug`, `s`.`subcat_name`, `s`.`subcat_slug`, `sh`.* FROM `categories` AS `c`, `subcategories` AS `s`, `showcase` AS `sh` WHERE `sh`.`sh_subcat` = `s`.`subcat_id` AND `s`.`cat_id` = `c`.`cat_id` AND `c`.`cat_slug` = :get_cat AND `s`.`subcat_slug` = :get_subcat AND `sh`.`sh_slug` = :get_slug ORDER BY `sh`.`sh_date` DESC";
+				break;
+		}
 
 		$sth = $dbh->prepare($query);
 		$sth->bindParam(':get_cat', $get_cat, PDO::PARAM_STR);
@@ -65,10 +73,16 @@ function get_title() {
 
 		$title_cat = $row['cat_name'];
 		$title_subcat = $row['subcat_name'];
-		if ($get_cat != 'graphics')
-			$title_slug = $row['ar_subject'];
-		else
-			$title_slug = $row['sh_title'];
+
+		switch ($get_cat) {
+			case 'writings':
+				$title_slug = $row['ar_subject'];
+				break;
+			
+			default:
+				$title_slug = $row['sh_title'];
+				break;
+		}	
 
 		$title = "$title_slug | Affelius &rsaquo; $title_cat &rsaquo; $title_subcat";
 	} elseif ( !empty($get_cat) && !empty($get_subcat) && empty($get_slug) ) { // subcategory page
@@ -213,7 +227,7 @@ function is_subcategory_page() {
 function get_page_links() {
 	list($get_cat, $get_subcat, $get_slug) = get_from_url();
 
-	$prelim = af_affelius_path.$get_cat.'/'.$get_subcat.'/';
+	$prelim = af_affelius_path . $get_cat . '/' . $get_subcat . '/';
 
 	if (!isset($_GET['page'])) {
 		$page = 1;
@@ -221,9 +235,9 @@ function get_page_links() {
 		$page = $_GET['page'];
 	}
 
-	$from = $prelim.($page - 1);
-	if ($from == $prelim.'1') $from = $prelim;
-	$to = $prelim.($page + 1);
+	$from = $prelim . 'page/' . ($page - 1);
+	if ($from == $prelim . 'page/' . '1') $from = $prelim;
+	$to = $prelim . 'page/' . ($page + 1);
 	$links = array($from, $to, $page);
 
 	return $links;

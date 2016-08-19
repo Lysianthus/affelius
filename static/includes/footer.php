@@ -28,11 +28,11 @@
 					<h4 class="footer-block__heading">More</h4>
 					<nav class="footer-block__menu">
 						<ul>
-							<li><a href="<?php echo af_affelius_path; ?>docs/services">Services</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>docs/faq">Frequently Asked Questions</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>docs/credits">Credits and Resources</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>docs/terms">Terms of Use</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>docs/disclaimer">Disclaimer</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>about/services">Services</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>about/faq">Frequently Asked Questions</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>about/credits">Credits and Resources</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>about/terms">Terms of Use</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>about/disclaimer">Disclaimer</a></li>
 						</ul>
 					</nav> <!-- .footer-block__menu -->
 				</div> <!-- .footer-block -->
@@ -41,9 +41,8 @@
 					<nav class="footer-block__menu">
 						<ul>
 							<li><a href="<?php echo af_affelius_path; ?>news/">News Archive</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>contests/">Contests</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>specials/">Specials</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>docs/sitemap">Sitemap</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>contests/hidden-pages">Hidden Pages</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>about/sitemap">Sitemap</a></li>
 					</nav> <!-- .footer-block__menu -->
 				</div> <!-- .footer-block -->
 			</div> <!-- .footer-blocks -->
@@ -62,7 +61,7 @@
 				<div class="footer-block">
 					<h4 class="footer-block__heading align-center"><span class="fa fa-speaker"></span> Shout for Joy!</h4>
 					<div id="cboxdiv" style="text-align: center; line-height: 0">
-						<div><iframe frameborder="0" width="300" style="max-width: 100%;" height="100" src="https://www2.cbox.ws/box/?boxid=2296333&amp;boxtag=4fltw0&amp;sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain2-2296333" style="border:#CCCCCC 1px solid;" id="cboxmain2-2296333"></iframe></div>
+						<div><iframe frameborder="0" width="300" style="max-width: 100%;" height="150" src="https://www2.cbox.ws/box/?boxid=2296333&amp;boxtag=4fltw0&amp;sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain2-2296333" style="border:#CCCCCC 1px solid;" id="cboxmain2-2296333"></iframe></div>
 						<div><iframe frameborder="0" width="300" style="max-width: 100%;" height="82" src="https://www2.cbox.ws/box/?boxid=2296333&amp;boxtag=4fltw0&amp;sec=form" marginheight="2" marginwidth="2" scrolling="no" allowtransparency="yes" name="cboxform2-2296333" style="border:#CCCCCC 1px solid;border-top:0px" id="cboxform2-2296333"></iframe></div>
 					</div>
 					<p class="align-center">Be kind to everyone. &bull; Use the contact form for linkage applications and requests.</p>
@@ -73,7 +72,7 @@
 				</div> <!-- .footer-block -->
 			</div> <!-- .footer-blocks -->
 			<div id="colophon">
-				<p>Copyright &copy; 2013-<?php date_default_timezone_set('Asia/Manila'); echo date("Y"); ?> Affelius &bull; <a href="<?php echo af_affelius_path; ?>about/versions">Affelius v4 &ldquo;Borders&rdquo;</a> &bull; Under the <a target="_blank" href="http://asclaria.org">Asclaria</a> Umbrella</p>
+				<p>Copyright &copy; 2013&ndash;<?php date_default_timezone_set('Asia/Manila'); echo date("Y"); ?> Affelius &bull; <a href="<?php echo af_affelius_path; ?>about/versions">Affelius v4 &ldquo;Fame-Hungry Eleanor&rdquo;</a> &bull; Under the <a target="_blank" href="http://asclaria.org">Asclaria</a> Umbrella</p>
 			</div> <!-- #colophon -->
 		</footer> <!-- #footer -->
 

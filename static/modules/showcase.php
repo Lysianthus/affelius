@@ -65,11 +65,25 @@ function showcase_content_init() {
 
 	$dbh = connect_to_db();
 
-	$query = "SELECT `c`.`cat_name`, `c`.`cat_slug`, `s`.`subcat_name`, `s`.`subcat_slug`, `sh`.* FROM `categories` AS `c`, `subcategories` AS `s`, `showcase` AS `sh` WHERE `sh`.`sh_subcat` = `s`.`subcat_id` AND `s`.`cat_id` = `c`.`cat_id` AND `c`.`cat_slug` = :get_cat AND `s`.`subcat_slug` = :get_subcat ORDER BY `sh`.`sh_date` DESC";
+	if (empty($get_slug)) {
 
-	$sth = $dbh->prepare($query);
-	$sth->bindParam(':get_cat', $get_cat, PDO::PARAM_STR);
-	$sth->bindParam(':get_subcat', $get_subcat, PDO::PARAM_STR);
+		$query = "SELECT `c`.`cat_name`, `c`.`cat_slug`, `s`.`subcat_name`, `s`.`subcat_slug`, `sh`.* FROM `categories` AS `c`, `subcategories` AS `s`, `showcase` AS `sh` WHERE `sh`.`sh_subcat` = `s`.`subcat_id` AND `s`.`cat_id` = `c`.`cat_id` AND `c`.`cat_slug` = :get_cat AND `s`.`subcat_slug` = :get_subcat ORDER BY `sh`.`sh_date` DESC";
+
+		$sth = $dbh->prepare($query);
+		$sth->bindParam(':get_cat', $get_cat, PDO::PARAM_STR);
+		$sth->bindParam(':get_subcat', $get_subcat, PDO::PARAM_STR);
+
+	} elseif (!empty($get_slug)) {
+
+		$query = "SELECT `c`.`cat_name`, `c`.`cat_slug`, `s`.`subcat_name`, `s`.`subcat_slug`, `sh`.* FROM `categories` AS `c`, `subcategories` AS `s`, `showcase` AS `sh` WHERE `sh`.`sh_subcat` = `s`.`subcat_id` AND `s`.`cat_id` = `c`.`cat_id` AND `c`.`cat_slug` = :get_cat AND `s`.`subcat_slug` = :get_subcat AND `sh`.`sh_slug` = :get_slug ORDER BY `sh`.`sh_date` DESC";
+
+		$sth = $dbh->prepare($query);
+		$sth->bindParam(':get_cat', $get_cat, PDO::PARAM_STR);
+		$sth->bindParam(':get_subcat', $get_subcat, PDO::PARAM_STR);
+		$sth->bindParam(':get_slug', $get_slug, PDO::PARAM_STR);
+
+	}
+
 	$sth->execute();
 	$sth->setFetchMode(PDO::FETCH_ASSOC);
 
@@ -99,7 +113,7 @@ function showcase_content($row) {
 	$download = $row['sh_download'];
 	$ext = $row['sh_ext'];
 	//$link = af_affelius_path . $row['cat_slug'] . '/' . $row['subcat_slug'] . '/' . $row['sh_slug'];
-	$link = $preview . '/';
+	$link = af_affelius_path . $preview;
 
 	$all = array($id, $cat_name, $cat_slug, $cat_link, $subcat_name, $subcat_slug, $subcat_link, $thumb, $title, $slug, $date, $describe, $preview, $download, $ext, $link);
 

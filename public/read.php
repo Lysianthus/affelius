@@ -15,7 +15,11 @@ inc_header();
 				$sth = archive_init();
 
 				while ($row = $sth->fetch()) :
-					list($id, $cat_name, $cat_slug, $subcat_name, $subcat_slug, $type, $subject, $slug, $author, $date, $icon, $content, $comments, $link, $disqus) = archive($row);
+					list($id, $cat_name, $cat_slug, $subcat_name, $subcat_slug, $type, $privacy, $subject, $slug, $author, $date, $icon, $content, $comments, $link, $disqus) = archive($row);
+
+					$is_subcategory_page = is_subcategory_page();
+
+					if (($is_subcategory_page == true && $privacy == 'public') || ($is_subcategory_page == false && $privacy != 'private')) :
 
 ?>
 					<article class="article">
@@ -36,6 +40,8 @@ inc_header();
 						</div> <!-- .article__content -->
 					</article> <!-- .article -->
 <?php
+
+					endif;
 
 					if (!empty($_GET['slug']) && ($comments == 1)) :
 

@@ -86,6 +86,7 @@ function archive($row) {
 	$subcat_name = $row['subcat_name'];
 	$subcat_slug = $row['subcat_slug'];
 	$type = $row['ar_type'];
+	$privacy = $row['ar_privacy'];
 	$subject = $row['ar_subject'];
 	$slug = $row['ar_slug'];
 	$author = $row['ar_author'];
@@ -93,23 +94,23 @@ function archive($row) {
 	$icon = $row['ar_icon'];	
 	$comments = $row['ar_comments'];
 
-	if (!empty($get_subcat)) { // article
+	if ($row['ar_subcat'] != 0) { // article
 		$link = af_affelius_path . $row['cat_slug'] . '/' . $row['subcat_slug'] . '/' . $row['ar_slug'];
-		$disqus = 'http://affeli.us/' . $row['cat_slug'] . '/' . $row['subcat_slug'] . '/' . $row['ar_slug'];
-	} elseif (empty($get_subcat)) { // page
+		$disqus = af_affelius_path . $row['cat_slug'] . '/' . $row['subcat_slug'] . '/' . $row['ar_slug'];
+	} else { // page
 		$link = af_affelius_path . $row['cat_slug'] . '/' . $row['ar_slug'];
-		$disqus = 'http://affeli.us/' . $row['cat_slug'] . '/' . $row['ar_slug'];
+		$disqus = af_affelius_path . $row['cat_slug'] . '/' . $row['ar_slug'];
 	}
 
 	if ((!empty($get_subcat)) && (empty($get_slug))) { // category
 		$content = substr($row['ar_content'], 0, strpos($row['ar_content'], '</p>'));
-		$content .= "\n<p><a class=\"read-more\" href=\"".$link."\">Read more... <span class=\"fa fa-chevron-right\"></span></a></p>";
+		$content .= "\n<p><a class=\"read-more\" href=\"".$link."\">Continue reading <span class=\"fa fa-chevron-right\"></span></a></p>";
 	}
 	else $content = $row['ar_content'];
 	
 	$content = autotab($content);
 
-	$all = array($id, $cat_name, $cat_slug, $subcat_name, $subcat_slug, $type, $subject, $slug, $author, $date, $icon, $content, $comments, $link, $disqus);
+	$all = array($id, $cat_name, $cat_slug, $subcat_name, $subcat_slug, $type, $privacy, $subject, $slug, $author, $date, $icon, $content, $comments, $link, $disqus);
 
 	return $all;
 }

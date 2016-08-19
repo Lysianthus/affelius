@@ -29,6 +29,5 @@ require_once(af_modules_path . 'database.php');
 require_once(af_modules_path . 'global.php');
 require_once(af_modules_path . 'archive.php');
 require_once(af_modules_path . 'showcase.php');
-require_once(af_modules_path . 'live.php');
 
 ?>
