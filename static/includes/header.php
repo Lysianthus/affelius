@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="theme-color" content="#BF43EA" />
+	<meta name="theme-color" content="#855741" />
 	<meta name="description" content="Affelius is Lysianthus's creative repository, which showcases writings, designs, resources, tools, and labs." />
 
 	<title><?php $title = get_title(); echo $title; ?></title>
@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/lib/prism.css" />
 	
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/typefaces-2dee79445b.css" />
-	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/affelius-e23141760a.css" />
+	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/affelius-7f4ccedb34.css" />
 </head>
 
 <body>
