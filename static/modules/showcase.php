@@ -113,7 +113,7 @@ function showcase_content($row) {
 	$download = $row['sh_download'];
 	$ext = $row['sh_ext'];
 	//$link = af_affelius_path . $row['cat_slug'] . '/' . $row['subcat_slug'] . '/' . $row['sh_slug'];
-	$link = af_affelius_path . $preview;
+	$link = $preview;
 
 	$all = array($id, $cat_name, $cat_slug, $cat_link, $subcat_name, $subcat_slug, $subcat_link, $thumb, $title, $slug, $date, $describe, $preview, $download, $ext, $link);
 
