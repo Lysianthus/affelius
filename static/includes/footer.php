@@ -52,6 +52,7 @@
 					<nav class="footer-block__menu align-center">
 						<ul>
 							<li><a target="_blank" href="http://ellipsis.three-words.net"><span data-title="Satine">Ellipsis</span></a></li>
+							<li><a target="_blank" href="http://www.otaku-box.com"><span data-title="Miria">Otaku-Box</span></a></li>
 							<li><a target="_blank" href="http://otaku-junk.com"><span data-title="Miria">Otaku Junk</span></a></li>
 							<li><a target="_blank" href="http://reverie.dragonebula.net"><span data-title="Alex">Resplendent Reverie</span></a></li>
 							<li><a target="_blank" href="http://vizune.com"><span data-title="Sasha">Vizune</span></a></li>
