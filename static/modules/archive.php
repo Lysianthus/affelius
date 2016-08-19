@@ -102,11 +102,18 @@ function archive($row) {
 		$disqus = af_affelius_path . $row['cat_slug'] . '/' . $row['ar_slug'];
 	}
 
-	if ((!empty($get_subcat)) && (empty($get_slug))) { // category
-		$content = substr($row['ar_content'], 0, strpos($row['ar_content'], '</p>'));
-		$content .= "\n<p><a class=\"read-more\" href=\"".$link."\">Continue reading <span class=\"fa fa-chevron-right\"></span></a></p>";
-	}
-	else $content = $row['ar_content'];
+	$is_subcategory_page = is_subcategory_page();
+
+	switch ($is_subcategory_page) {
+		case true:
+			$content = substr($row['ar_content'], 0, strpos($row['ar_content'], '</p>'));
+			$content .= "\n<p><a class=\"read-more\" href=\"".$link."\">Continue reading <span class=\"fa fa-chevron-right\"></span></a></p>";
+			break;
+		
+		default:
+			else $content = $row['ar_content'];
+			break;
+	}	
 	
 	$content = autotab($content);
 
