@@ -111,7 +111,7 @@ function archive($row) {
 			break;
 		
 		default:
-			else $content = $row['ar_content'];
+			$content = $row['ar_content'];
 			break;
 	}	
 	
