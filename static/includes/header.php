@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/lib/prism.css" />
 	
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/typefaces-2dee79445b.css" />
-	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/affelius-9d854ed1f6.css" />
+	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/affelius-e23141760a.css" />
 </head>
 
 <body>
