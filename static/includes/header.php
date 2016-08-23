@@ -13,7 +13,7 @@
 
 	<title><?php $title = get_title(); echo $title; ?></title>
 
-	<link rel="shortcut icon" href="<?php echo af_affelius_path; ?>assets/images/favicon.ico" />
+	<link rel="shortcut icon" href="<?php echo af_affelius_path; ?>assets/images/favicon.ico?describe=pure-purple-square" />
 
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" />
@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/lib/prism.css" />
 	
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/typefaces-2dee79445b.css" />
-	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/affelius-7f4ccedb34.css" />
+	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/affelius-2a66b98c28.css" />
 </head>
 
 <body>
