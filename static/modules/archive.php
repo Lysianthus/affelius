@@ -78,8 +78,6 @@ function archive_init() {
  * @return array $all
  */
 function archive($row) {
-	list($get_cat, $get_subcat, $get_slug) = get_from_url();
-
 	$id = $row['ar_id'];
 	$cat_name = $row['cat_name'];
 	$cat_slug = $row['cat_slug'];
@@ -94,7 +92,7 @@ function archive($row) {
 	$icon = $row['ar_icon'];	
 	$comments = $row['ar_comments'];
 
-	if ($row['ar_subcat'] != 0) { // article
+	if (!empty($_GET['subcat'])) { // article
 		$link = af_affelius_path . $row['cat_slug'] . '/' . $row['subcat_slug'] . '/' . $row['ar_slug'];
 		$disqus = af_affelius_path . $row['cat_slug'] . '/' . $row['subcat_slug'] . '/' . $row['ar_slug'];
 	} else { // page
@@ -117,7 +115,7 @@ function archive($row) {
 		default:
 			$content = $row['ar_content'];
 			break;
-	}	
+	}
 	
 	$content = autotab($content);
 
