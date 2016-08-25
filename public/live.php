@@ -19,7 +19,7 @@ include 'static/init.php';
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" />
 	
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/typefaces-2dee79445b.css" />
-	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/live-82c2ccb6c3.css" />
+	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/live-f3a2c13a3a.css" />
 </head>
 
 <body>
