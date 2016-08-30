@@ -43,6 +43,7 @@
 							<li><a href="<?php echo af_affelius_path; ?>news/">News Archive</a></li>
 							<li><a href="<?php echo af_affelius_path; ?>contests/hidden-pages">Hidden Pages</a></li>
 							<li><a href="<?php echo af_affelius_path; ?>about/sitemap">Sitemap</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>writings/articles/free-yet-reliable">Hosting</a></li>
 					</nav> <!-- .footer-block__menu -->
 				</div> <!-- .footer-block -->
 			</div> <!-- .footer-blocks -->
@@ -51,6 +52,7 @@
 					<h4 class="footer-block__heading align-center">Affiliates</h4>
 					<nav class="footer-block__menu align-center">
 						<ul>
+							<li><a target="_blank" href="http://daily-lovejuice.net">Daily Lovejuice</a></li>
 							<li><a target="_blank" href="http://ellipsis.three-words.net">Ellipsis</a></li>
 							<li><a target="_blank" href="http://www.otaku-box.com">Otaku-Box</a></li>
 							<li><a target="_blank" href="http://otaku-junk.com">Otaku Junk</a></li>
