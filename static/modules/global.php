@@ -129,7 +129,7 @@ function get_title() {
 		$title = "Affelius";
 	}
 	
-	$title .= ' '."&mdash; Lysianthus's Creative Repository";
+	$title .= ' '."&mdash; Lysianthus’s Creative Repository";
 	
 	return $title;
 }
