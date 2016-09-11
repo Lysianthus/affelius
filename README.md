@@ -2,6 +2,8 @@
 
 Affelius is Lysianthus’s creative repository.
 
+This repository contains the content management system that runs Affelius.
+
 [Live](https://affeli.us)
 
 ## Environment
