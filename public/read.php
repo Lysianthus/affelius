@@ -19,8 +19,6 @@ inc_header();
 
 					$is_subcategory_page = is_subcategory_page();
 
-					if (($is_subcategory_page == true && $privacy == 'public') || ($is_subcategory_page == false && $privacy != 'private')) :
-
 ?>
 					<article class="article">
 						<div class="article__meta">
@@ -40,8 +38,6 @@ inc_header();
 						</div> <!-- .article__content -->
 					</article> <!-- .article -->
 <?php
-
-					endif;
 
 					if (!empty($_GET['slug']) && ($comments == 1)) :
 

@@ -7,7 +7,7 @@ function check_if_article_exists() {
 	$sth = archive_init();
 
 	if ($sth == false) {
-		header('Location:'.af_affelius_path.'oops/404');
+		header('Location:' . af_affelius_path . 'oops/404');
 	}
 }
 
@@ -23,7 +23,7 @@ function archive_init() {
 
 	if ( !empty($get_cat) && !empty($get_subcat) && !empty($get_slug) ) { // article
 	
-		$query = "SELECT `c`.`cat_name`, `c`.`cat_slug`, `s`.`subcat_name`, `s`.`subcat_slug`, `ar`.* FROM `categories` AS `c`, `subcategories` AS `s`, `archive` AS `ar` WHERE `ar`.`ar_subcat` = `s`.`subcat_id` AND `s`.`cat_id` = `c`.`cat_id` AND `c`.`cat_slug` = :get_cat AND `s`.`subcat_slug` = :get_subcat AND `ar`.`ar_slug` = :get_slug";
+		$query = "SELECT `c`.`cat_name`, `c`.`cat_slug`, `s`.`subcat_name`, `s`.`subcat_slug`, `ar`.* FROM `categories` AS `c`, `subcategories` AS `s`, `archive` AS `ar` WHERE `ar`.`ar_privacy` != 'private' AND `ar`.`ar_subcat` = `s`.`subcat_id` AND `s`.`cat_id` = `c`.`cat_id` AND `c`.`cat_slug` = :get_cat AND `s`.`subcat_slug` = :get_subcat AND `ar`.`ar_slug` = :get_slug";
 
 		$sth = $dbh->prepare($query);
 		$sth->bindParam(':get_cat', $get_cat, PDO::PARAM_STR);
@@ -34,15 +34,17 @@ function archive_init() {
 
 		$default_page_cut = 5;
 
-		if (!isset($_GET['page'])) {
+		/*if (!isset($_GET['page'])) {
 			$page = 1;
 		} else {
 			$page = $_GET['page'];
-		}
+		}*/
+
+		!isset($_GET['page']) ? $page = 1 : $page = $_GET['page'];
 
 		$start = (($page * $default_page_cut) - $default_page_cut);
 
-		$query = "SELECT `c`.`cat_name`, `c`.`cat_slug`, `s`.`subcat_name`, `s`.`subcat_slug`, `ar`.* FROM `categories` AS `c`, `subcategories` AS `s`, `archive` AS `ar` WHERE `ar`.`ar_subcat` = `s`.`subcat_id` AND `s`.`cat_id` = `c`.`cat_id` AND `c`.`cat_slug` = :get_cat AND `s`.`subcat_slug` = :get_subcat ORDER BY `ar`.`ar_date` DESC LIMIT $start, $default_page_cut";
+		$query = "SELECT `c`.`cat_name`, `c`.`cat_slug`, `s`.`subcat_name`, `s`.`subcat_slug`, `ar`.* FROM `categories` AS `c`, `subcategories` AS `s`, `archive` AS `ar` WHERE `ar`.`ar_privacy` = 'public' AND `ar`.`ar_subcat` = `s`.`subcat_id` AND `s`.`cat_id` = `c`.`cat_id` AND `c`.`cat_slug` = :get_cat AND `s`.`subcat_slug` = :get_subcat ORDER BY `ar`.`ar_date` DESC LIMIT $start, $default_page_cut";
 
 		$sth = $dbh->prepare($query);
 		$sth->bindParam(':get_cat', $get_cat, PDO::PARAM_STR);
