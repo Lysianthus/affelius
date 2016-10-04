@@ -97,9 +97,12 @@ function archive($row) {
 	if (!empty($_GET['subcat'])) { // article
 		$link = af_affelius_path . $row['cat_slug'] . '/' . $row['subcat_slug'] . '/' . $row['ar_slug'];
 		$disqus = af_affelius_path . $row['cat_slug'] . '/' . $row['subcat_slug'] . '/' . $row['ar_slug'];
-	} else { // page
+	} elseif (!empty($_GET['cat'])) { //page
 		$link = af_affelius_path . $row['cat_slug'] . '/' . $row['ar_slug'];
 		$disqus = af_affelius_path . $row['cat_slug'] . '/' . $row['ar_slug'];
+	} else { // page
+		$link = af_affelius_path . $row['cat_slug'] . '/' . $row['subcat_slug'] . '/' . $row['ar_slug'];
+		$disqus = af_affelius_path . $row['cat_slug'] . '/' . $row['subcat_slug'] . '/' . $row['ar_slug'];
 	}
 
 	$is_subcategory_page = is_subcategory_page();
