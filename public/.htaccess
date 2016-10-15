@@ -10,6 +10,7 @@ RewriteRule ^(.*)$ $1.php [L]
 
 RewriteRule ^(about|docs|links|news|oops|contests|specials)/([^/]+)/?$ read.php?cat=$1&slug=$2 [L]
 RewriteRule ^writings/([^/]+)/page/([0-9]+)/?$ read.php?cat=writings&subcat=$1&page=$2 [L]
+RewriteRule ^writings/fan-fiction/([^/]+)/([0-9]+)/?$ read.php?cat=writings&subcat=fan-fiction&slug=$1/$2 [L]
 RewriteRule ^writings/([^/]+)/([^/]+)/?$ read.php?cat=writings&subcat=$1&slug=$2 [L]
 RewriteRule ^writings/([^/]+)/?$ read.php?cat=writings&subcat=$1 [L]
 RewriteRule ^(about|docs|links|news|contests|specials)/?$ read.php?cat=$1 [L]
