@@ -45,7 +45,7 @@ include 'static/init.php';
 	$row = $sth->fetch();
 	list($id, $cat_name, $cat_slug, $cat_link, $subcat_name, $subcat_slug, $subcat_link, $thumb, $title, $slug, $date, $describe, $preview, $download, $ext, $link) = showcase_content($row);
 	$download_link = '/+download' . $preview . $ext;
-	$iframe = af_affelius_path . 'content/showcase/' . $cat_slug . '/' . $slug;
+	$iframe = af_affelius_path . 'content/showcase/' . $cat_slug . '/' . $slug .'/';
 
 	if ($download == 1) :
 
