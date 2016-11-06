@@ -36,7 +36,7 @@ include 'static/init.php';
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/lib/prism.css" />
 	
 	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/typefaces-2dee79445b.css" />
-	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/affelius-f6c462d32b.css" />
+	<link rel="stylesheet" href="<?php echo af_affelius_path; ?>assets/css/affelius-f2899efb87.css" />
 </head>
 
 <body>
@@ -199,22 +199,23 @@ include 'static/init.php';
 
 ?>
 								<li>
-									<input name="security" id="security" type="text" required placeholder="Hint: yellow" />
 									<label for="security"><span class="fa fa-question"></span> What is the color of yellow?</label>
+									<input name="security" id="security" type="text" required placeholder="Hint: yellow" />
 								</li>
 								<li>
-									<input name="name" id="name" type="text" required placeholder="Lysianthus" />
 									<label for="name"><span class="fa fa-user"></span> What is your name?</label>
+									<input name="name" id="name" type="text" required placeholder="Lysianthus" />
 								</li>
 								<li>
-									<input name="email" id="email" type="email" required placeholder="hello@affeli.us" />
 									<label for="email"><span class="fa fa-envelope"></span> What is your e-mail address?</label>
+									<input name="email" id="email" type="email" required placeholder="hello@affeli.us" />
 								</li>
 								<li>
-									<input name="url" id="url" type="url" placeholder="https://affeli.us" />
 									<label for="url"><span class="fa fa-link"></span> Give me a link to your website! <small>(optional)</small></label>
+									<input name="url" id="url" type="url" placeholder="https://affeli.us" />
 								</li>
 								<li>
+									<label for="subject"><span class="fa fa-arrow-up"></span> Choose the appropriate subject line.</label>
 									<select name="subject" id="subject" required>
 										<option>Sitely Matters</option>
 										<option>Personal Matters</option>
@@ -224,18 +225,17 @@ include 'static/init.php';
 										<option>Error Reporting</option>
 										<option>Other Concerns</option>
 									</select>
-									<label for="subject"><span class="fa fa-arrow-up"></span> Choose the appropriate subject line.</label>
 									<div class="info">
 										<p><span class="fa fa-info-circle"></span> Confused which subject line to use? That means you haven't read the rules! Tsk tsk.</p>
 									</div> <!-- .info -->
 								</li>
 								<li>
-									<textarea name="message" id="message" required placeholder="Say what you wanna say." rows="5"></textarea>
 									<label for="message"><span class="fa fa-pencil"></span> Disrobe yourself.</label>
+									<textarea name="message" id="message" required placeholder="Say what you wanna say." rows="5"></textarea>
 								</li>
 								<li>
-									<input name="fav" id="favcolor" placeholder="turqouise" />
 									<label for="fav"><span class="fa fa-paw"></span> What is your favorite color? <small>(optional)</small></label>
+									<input name="fav" id="favcolor" placeholder="turqouise" />
 								</li>
 								<li class="align-center">
 									<button name="send" type="submit"><span class="fa fa-send-o"></span> Send Message</button>
