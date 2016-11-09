@@ -111,11 +111,12 @@ function showcase_content($row) {
 	$describe = $row['sh_describe'];
 	$preview = $row['sh_preview'];
 	$download = $row['sh_download'];
+	$pledge = $row['sh_pledge'];
 	$ext = $row['sh_ext'];
 	//$link = af_affelius_path . $row['cat_slug'] . '/' . $row['subcat_slug'] . '/' . $row['sh_slug'];
 	$link = $preview;
 
-	$all = array($id, $cat_name, $cat_slug, $cat_link, $subcat_name, $subcat_slug, $subcat_link, $thumb, $title, $slug, $date, $describe, $preview, $download, $ext, $link);
+	$all = array($id, $cat_name, $cat_slug, $cat_link, $subcat_name, $subcat_slug, $subcat_link, $thumb, $title, $slug, $date, $describe, $preview, $download, $pledge, $ext, $link);
 
 	return $all;
 }
