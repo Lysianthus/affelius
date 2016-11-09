@@ -43,8 +43,9 @@ include 'static/init.php';
 	$sth = showcase_content_init();
 
 	$row = $sth->fetch();
-	list($id, $cat_name, $cat_slug, $cat_link, $subcat_name, $subcat_slug, $subcat_link, $thumb, $title, $slug, $date, $describe, $preview, $download, $ext, $link) = showcase_content($row);
-	$download_link = '/+download' . $preview . $ext;
+	list($id, $cat_name, $cat_slug, $cat_link, $subcat_name, $subcat_slug, $subcat_link, $thumb, $title, $slug, $date, $describe, $preview, $download, $pledge, $ext, $link) = showcase_content($row);
+	//$download_link = '/+download' . $preview . $ext;
+	$download_link = !empty($pledge) ? $pledge : '/+download' . $preview . $ext;
 	$iframe = af_affelius_path . 'content/showcase/' . $cat_slug . '/' . $slug .'/';
 
 	if ($download == 1) :

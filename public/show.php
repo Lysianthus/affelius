@@ -41,7 +41,7 @@ inc_header();
 					$sth = showcase_content_init();
 
 					while ($row = $sth->fetch()) :
-						list($id, $cat_name, $cat_slug, $cat_link, $subcat_name, $subcat_slug, $subcat_link, $thumb, $title, $slug, $date, $describe, $preview, $download, $ext, $link) = showcase_content($row);
+						list($id, $cat_name, $cat_slug, $cat_link, $subcat_name, $subcat_slug, $subcat_link, $thumb, $title, $slug, $date, $describe, $preview, $download, $pledge, $ext, $link) = showcase_content($row);
 
 ?>
 					<figure class="showcase__item">
