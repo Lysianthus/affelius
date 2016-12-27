@@ -1,5 +1,6 @@
 <?php
 
+require_once '/home/affeli/libraries/swiftmailer/lib/swift_required.php';
 include 'static/init.php';
 
 ?>
@@ -170,17 +171,33 @@ include 'static/init.php';
 										$message = stripslashes($_POST['message']);
 										$fav = stripslashes($_POST['fav']);
 
-										$to = 'hello@affeli.us';
-										$subject = "[Affelius] $subject";
-										$body = "Name: $name\nE-mail Address: $email\nWebsite URL: $url\n\nMessage:\n\n$message\n\nFavorite Color: $fav\n\n---\n\nThis message was sent via Affelius > Contact.";
-										$header = "From: $name <$email>";
+										$body = "<p><b>Name:</b> $name</p>
+<p><b>Email Address:</b> $email</p>
+<p><b>Website:</b> $url</p>
+<p><b>Message:</b></p>
+<p>$message</p>
+<p><b>Favorite Color:</b> $fav</p>
+<hr />
+<p>This message was sent through the contact form on Affelius.</p>";
 
-										mail($to, $subject, $body, $header);
+										// Swiftmailer
+
+										$transport = Swift_SmtpTransport::newInstance('mail.affeli.us', 25);
+										$mailer = Swift_Mailer::newInstance($transport);
+
+										$message = Swift_Message::newInstance();
+
+										$message->setSubject("[Affelius] $subject");
+										$message->setBody($body, 'text/html');
+										$message->setTo('hello@affeli.us');
+										$message->setFrom(array($email => $name));
+
+										$numSent = $mailer->send($message);
 
 ?>
 								<li>
 									<p>Holla, <?php echo $name; ?>!</p>
-									<p>Thank you so much for taking the time to send a message. I always check my inbox, so your e-mail will most likely be read in no time (within the week, at most)! Replies might take some time, though; I get tongue-tied easily. <img</p>
+									<p>Thank you so much for taking the time to send a message. I always check my inbox, so your email will most likely be read in no time (within the week, at most)! Replies might take some time, though; I get tongue-tied easily. <img</p>
 									<p>I hope you enjoy browsing. Have a nice day! <img alt="" src="/+smilies/dotty/dotty-fartheart.gif" /></p>
 								</li>
 <?php
@@ -207,7 +224,7 @@ include 'static/init.php';
 									<input name="name" id="name" type="text" required placeholder="Lysianthus" />
 								</li>
 								<li>
-									<label for="email"><span class="fa fa-envelope"></span> What is your e-mail address?</label>
+									<label for="email"><span class="fa fa-envelope"></span> What is your email address?</label>
 									<input name="email" id="email" type="email" required placeholder="hello@affeli.us" />
 								</li>
 								<li>
