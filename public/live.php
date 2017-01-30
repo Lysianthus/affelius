@@ -21,8 +21,6 @@ include 'static/init.php';
 
 	<meta name="twitter:card" content="Affelius is Lysianthus’s creative repository." />
 	<meta name="twitter:site" content="@affelius" />
-	<meta name="twitter:creator" content="@lysnths" />
-	<meta name="twitter:url" content="https://affeli.us" />
 	<meta name="twitter:title" content="Affelius — Lysianthus’s Creative Repository" />
 	<meta name="twitter:description" content="Affelius is Lysianthus’s creative repository, which showcases writings, designs, resources, tools, and labs." />
 
