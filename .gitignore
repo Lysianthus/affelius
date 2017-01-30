@@ -1,6 +1,7 @@
 common
 dist
 src
+static/pages/*
 *.db
 *.ini
 *.sublime-project
