@@ -16,7 +16,7 @@
 
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@affelius" />
-	<meta name="twitter:title" content="Affelius — Lysianthus’s Creative Repository" />
+	<meta name="twitter:title" content="<?php $title = get_title(); echo $title; ?>" />
 	<meta name="twitter:description" content="Affelius is Lysianthus’s creative repository, which showcases writings, designs, resources, tools, and labs." />
 
 	<title><?php $title = get_title(); echo $title; ?></title>
