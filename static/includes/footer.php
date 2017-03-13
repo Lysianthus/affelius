@@ -54,6 +54,7 @@
 						<ul>
 							<li><a target="_blank" href="http://daily-lovejuice.net">Daily Lovejuice</a></li>
 							<li><a target="_blank" href="http://ellipsis.three-words.net">Ellipsis</a></li>
+							<li><a target="_blank" href="http://hellolittlered.org">Hello Little Red</a></li>
 							<li><a target="_blank" href="http://lovemore.xyz">Lovemore</a></li>
 							<li><a target="_blank" href="http://www.otaku-box.com">Otaku-Box</a></li>
 							<li><a target="_blank" href="http://otaku-junk.com">Otaku Junk</a></li>
@@ -76,7 +77,7 @@
 				</div> <!-- .footer-block -->
 			</div> <!-- .footer-blocks -->
 			<div id="colophon">
-				<p>Copyright &copy; 2013&ndash;<?php date_default_timezone_set('Asia/Manila'); echo date("Y"); ?> Affelius &bull; <a href="<?php echo af_affelius_path; ?>about/versions">Affelius v4 &ldquo;Fame-Hungry Eleanor&rdquo;</a> &bull; Under the <a target="_blank" href="http://asclaria.org">Asclaria</a> Umbrella</p>
+				<p>Copyright &copy; 2013&ndash;<?php date_default_timezone_set('Asia/Manila'); echo date("Y"); ?> Affelius &bull; <a href="<?php echo af_affelius_path; ?>about/versions">Affelius Version 4</a> &bull; Under the <a target="_blank" href="http://asclaria.org">Asclaria</a> Umbrella</p>
 			</div> <!-- #colophon -->
 		</footer> <!-- #footer -->
 
