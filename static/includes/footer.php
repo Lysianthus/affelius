@@ -13,14 +13,14 @@
 					</nav> <!-- .footer-block__menu -->
 				</div> <!-- .footer-block -->
 				<div class="footer-block">
-					<h4 class="footer-block__heading">Links</h4>
+					<h4 class="footer-block__heading">Linkage</h4>
 					<nav class="footer-block__menu">
 						<ul>
-							<li><a href="<?php echo af_affelius_path; ?>links/">Affiliates</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>links/out">Links Exchange</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>links/listings">Listings and Rotations</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>links/in">Banners and Buttons</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>links/rules">Linkage Rules</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>linkage/">Affiliates</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>linkage/out">Links Exchange</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>linkage/listings">Listings and Rotations</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>linkage/in">Banners and Buttons</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>linkage/rules">Linkage Rules</a></li>
 						</ul>
 					</nav> <!-- .footer-block__menu -->
 				</div> <!-- .footer-block -->
