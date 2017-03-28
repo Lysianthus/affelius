@@ -8,12 +8,12 @@ RewriteRule ^(.*)$ $1.php [L]
 
 # Rewrite URLs
 
-RewriteRule ^(about|docs|links|news|oops|contests|specials)/([^/]+)/?$ read.php?cat=$1&slug=$2 [L]
+RewriteRule ^(about|docs|linkage|news|oops|contests|specials)/([^/]+)/?$ read.php?cat=$1&slug=$2 [L]
 RewriteRule ^writings/([^/]+)/page/([0-9]+)/?$ read.php?cat=writings&subcat=$1&page=$2 [L]
 RewriteRule ^writings/fan-fiction/([^/]+)/([0-9]+)/?$ read.php?cat=writings&subcat=fan-fiction&slug=$1/$2 [L]
 RewriteRule ^writings/([^/]+)/([^/]+)/?$ read.php?cat=writings&subcat=$1&slug=$2 [L]
 RewriteRule ^writings/([^/]+)/?$ read.php?cat=writings&subcat=$1 [L]
-RewriteRule ^(about|docs|links|news|contests|specials)/?$ read.php?cat=$1 [L]
+RewriteRule ^(about|docs|linkage|news|contests|specials)/?$ read.php?cat=$1 [L]
 
 RewriteRule ^graphics/([^/]+)/([^/]+)/?$ preview.php?cat=graphics&subcat=$1&slug=$2 [L]
 RewriteRule ^(designs|resources|tools|labs)/([^/]+)/([^/]+)/?$ live.php?cat=$1&subcat=$2&slug=$3 [L]
