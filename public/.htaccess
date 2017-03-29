@@ -32,9 +32,9 @@ RewriteRule ^(calling|bitterness|autobiography|geometric|serif|text|first|fun|hi
 
 # Errors
 
-ErrorDocument 404 http://affeli.us/oops/404
-ErrorDocument 403 http://affeli.us/oops/403
-ErrorDocument 500 http://affeli.us/oops/500
+ErrorDocument 404 https://affeli.us/oops/404
+ErrorDocument 403 https://affeli.us/oops/403
+ErrorDocument 500 https://affeli.us/oops/500
 
 # Other
 
