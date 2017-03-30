@@ -44,7 +44,7 @@
 							<li><a href="<?php echo af_affelius_path; ?>contests/hidden-pages">Hidden Pages</a></li>
 							<li><a href="<?php echo af_affelius_path; ?>about/sitemap">Sitemap</a></li>
 							<li><a href="<?php echo af_affelius_path; ?>writings/articles/free-yet-reliable">Hosting</a></li>
-							<li><a href='https://ko-fi.com/A020W3G' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a></li>
+							<li><script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#028090', 'A020W3G');kofiwidget2.draw();</script> </li>
 					</nav> <!-- .footer-block__menu -->
 				</div> <!-- .footer-block -->
 			</div> <!-- .footer-blocks -->
