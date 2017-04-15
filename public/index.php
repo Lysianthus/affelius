@@ -55,6 +55,7 @@ inc_header();
 							<p class="article__comments-link"><a href="<?php echo $link ?>#disqus_thread" data-disqus-identifier="<?php echo $id ?>"><span class="fa fa-comments"></span> Comments</a></p>
 							<?php endif; ?>
 						</div> <!-- .article__meta -->
+						<div class="article__avatar"><img alt="" src="/content/auxiliaries/icons/icon.php" /></div>
 						<h2 class="article__subject"><a href="<?php echo '/news/' . $slug; ?>"><?php echo $subject; ?></a></h2>
 						<div class="article__content">
 
