@@ -30,7 +30,7 @@ inc_header();
 							<p class="article__comments-link"><a href="<?php echo $link ?>#disqus_thread" data-disqus-identifier="<?php echo $id ?>"><span class="fa fa-comments"></span> Comments</a></p>
 							<?php endif; ?>
 						</div> <!-- .article__meta -->
-						<?php if ($type == 'article') : ?>
+						<?php if ($icon == 1) : ?>
 						<div class="article__avatar"><img alt="" src="/content/auxiliaries/icons/icon.php" /></div>
 						<?php endif; ?>
 						<h2 class="article__subject"><a href="<?php echo $link; ?>"><?php echo $subject; ?></a></h2>
