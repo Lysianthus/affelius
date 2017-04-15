@@ -70,7 +70,7 @@
 						<div><iframe frameborder="0" width="300" style="max-width: 100%;" height="150" src="https://www2.cbox.ws/box/?boxid=2296333&amp;boxtag=4fltw0&amp;sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain2-2296333" style="border:#CCCCCC 1px solid;" id="cboxmain2-2296333"></iframe></div>
 						<div><iframe frameborder="0" width="300" style="max-width: 100%;" height="82" src="https://www2.cbox.ws/box/?boxid=2296333&amp;boxtag=4fltw0&amp;sec=form" marginheight="2" marginwidth="2" scrolling="no" allowtransparency="yes" name="cboxform2-2296333" style="border:#CCCCCC 1px solid;border-top:0px" id="cboxform2-2296333"></iframe></div>
 					</div>
-					<p class="align-center">Be kind to everyone. &bull; Use the contact form for links applications and requests.</p>
+					<p class="align-center">Be kind to everyone. &bull; Use the contact form for requests and linkage applications.</p>
 				</div> <!-- .footer-block -->
 				<div class="footer-block">
 					<h4 class="footer-block__heading align-center">Affelius on Twitter</h4>
