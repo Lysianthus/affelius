@@ -8,7 +8,9 @@
 
 	<meta name="description" content="Affelius is Lysianthus’s creative repository, which showcases writings, designs, resources, tools, and labs." />
 
-	<meta property="og:title" content="Affelius" />
+	<?php $title = get_title(); ?>
+
+	<meta property="og:title" content="<?php echo $title; ?>" />
 	<meta property="og:site_name" content="Affelius" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://affeli.us" />
@@ -16,10 +18,10 @@
 
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@affelius" />
-	<meta name="twitter:title" content="<?php $title = get_title(); echo $title; ?>" />
+	<meta name="twitter:title" content="<?php echo $title; ?>" />
 	<meta name="twitter:description" content="Affelius is Lysianthus’s creative repository, which showcases writings, designs, resources, tools, and labs." />
 
-	<title><?php $title = get_title(); echo $title; ?></title>
+	<title><?php echo $title; ?></title>
 
 	<link rel="shortcut icon" href="<?php echo af_affelius_path; ?>assets/images/favicon.ico?describe=pure-metallicseaweed-square" />
 
