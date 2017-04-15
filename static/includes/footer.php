@@ -17,8 +17,8 @@
 					<nav class="footer-block__menu">
 						<ul>
 							<li><a href="<?php echo af_affelius_path; ?>linkage/">Affiliates</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>linkage/out">Links Exchange</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>linkage/listings">Listings and Rotations</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>linkage/out#links_exchange">Links Exchange</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>linkage/out#listings">Listings and Rotations</a></li>
 							<li><a href="<?php echo af_affelius_path; ?>linkage/in">Banners and Buttons</a></li>
 							<li><a href="<?php echo af_affelius_path; ?>linkage/rules">Linkage Rules</a></li>
 						</ul>
