@@ -138,8 +138,8 @@
 				<ul class="social-menu__list">
 					<li><a target="_blank" href="https://twitter.com/affelius"><span class="fa fa-twitter"></span></a></li>
 					<li><a target="_blank" href="https://github.com/Lysianthus/affelius"><span class="fa fa-github"></span></a></li>
-					<li><a target="_blank" href="http://asclaria.org"><span class="fa fa-umbrella"></span></a></li>
-					<li><a target="_blank" href="http://lysianth.us"><span class="fa fa-user"></span></a></li>
+					<li><a target="_blank" href="https://asclaria.org"><span class="fa fa-umbrella"></span></a></li>
+					<li><a target="_blank" href="https://lysianth.us"><span class="fa fa-user"></span></a></li>
 				</ul> <!-- .social-menu__list -->
 			</nav> <!-- #social -->
 		</header> <!-- #header -->
