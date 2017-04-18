@@ -41,7 +41,7 @@
 				<li><a href="<?php echo af_affelius_path; ?>about/">About</a></li>
 				<li><a href="<?php echo af_affelius_path; ?>about/services">Services</a></li>
 				<li><a href="<?php echo af_affelius_path; ?>linkage/">Linkage</a></li>
-				<li><a href="<?php echo af_affelius_path; ?>contact">Contact</a></li>
+				<li><a href="<?php echo af_affelius_path; ?>contact/">Contact</a></li>
 			</ul> <!-- #sitely menu .sitely-menu -->
 			<ul class="showcase-menu">
 				<li id="menu-toggler--text" class="showcase-menu__item">
@@ -58,7 +58,7 @@
 						<li><a href="<?php echo af_affelius_path; ?>about/">About</a></li>
 						<li><a href="<?php echo af_affelius_path; ?>about/services">Services</a></li>
 						<li><a href="<?php echo af_affelius_path; ?>linkage/">Linkage</a></li>
-						<li><a href="<?php echo af_affelius_path; ?>contact">Contact</a></li>
+						<li><a href="<?php echo af_affelius_path; ?>contact/">Contact</a></li>
 					</ul> <!-- .showcase-menu__item__list -->
 				</li> <!-- .showcase-menu__item -->
 				<li class="showcase-menu__item">
