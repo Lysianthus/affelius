@@ -15,7 +15,7 @@
  * Include header.php
  */
 function inc_header() {
-	include 'static/includes/header.php';
+	include 'includes/header.php';
 	echo "\n";
 }
 
@@ -23,7 +23,7 @@ function inc_header() {
  * Include footer.php
  */
 function inc_footer() {
-	include 'static/includes/footer.php';
+	include 'includes/footer.php';
 	echo "\n";
 }
 
