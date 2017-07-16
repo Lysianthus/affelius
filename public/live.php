@@ -2,6 +2,14 @@
 
 include 'static/init.php';
 
+$sth = showcase_content_init();
+
+$row = $sth->fetch();
+list($id, $cat_name, $cat_slug, $cat_link, $subcat_name, $subcat_slug, $subcat_link, $thumb, $title, $slug, $date, $describe, $preview, $download, $pledge, $ext, $link) = showcase_content($row);
+//$download_link = '/+download' . $preview . $ext;
+$download_link = !empty($pledge) ? $pledge : '/+download' . $preview . $ext;
+$iframe = af_affelius_path . 'content/showcase/' . $cat_slug . '/' . $slug .'/';
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,18 +21,22 @@ include 'static/init.php';
 
 	<meta name="description" content="Affelius is Lysianthus’s creative repository, which showcases writings, designs, resources, tools, and labs." />
 
-	<meta property="og:title" content="Affelius" />
+	<?php $page_title = get_title(); ?>
+
+	<meta property="og:title" content="<?php echo $page_title; ?>" />
 	<meta property="og:site_name" content="Affelius" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://affeli.us" />
-	<meta property="og:description" content="Affelius is Lysianthus’s creative repository, which showcases writings, designs, resources, tools, and labs." />
+	<meta property="og:description" content="<?php echo $describe; ?>" />
+	<meta property="og:image" content="<?php echo $thumb; ?>" />
 
-	<meta name="twitter:card" content="Affelius is Lysianthus’s creative repository." />
+	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@affelius" />
-	<meta name="twitter:title" content="Affelius — Lysianthus’s Creative Repository" />
-	<meta name="twitter:description" content="Affelius is Lysianthus’s creative repository, which showcases writings, designs, resources, tools, and labs." />
+	<meta name="twitter:title" content="<?php echo $page_title; ?>" />
+	<meta name="twitter:description" content="<?php echo $describe; ?>" />
+	<meta name="twitter:image" content="<?php echo $thumb; ?>" />
 
-	<title><?php $title = get_title(); echo $title; ?></title>
+	<title><?php echo $page_title; ?></title>
 
 	<link rel="shortcut icon" href="<?php echo af_affelius_path; ?>assets/images/favicon.ico?describe=pure-metallicseaweed-square" />
 
@@ -37,14 +49,6 @@ include 'static/init.php';
 
 <body>
 <?php
-
-	$sth = showcase_content_init();
-
-	$row = $sth->fetch();
-	list($id, $cat_name, $cat_slug, $cat_link, $subcat_name, $subcat_slug, $subcat_link, $thumb, $title, $slug, $date, $describe, $preview, $download, $pledge, $ext, $link) = showcase_content($row);
-	//$download_link = '/+download' . $preview . $ext;
-	$download_link = !empty($pledge) ? $pledge : '/+download' . $preview . $ext;
-	$iframe = af_affelius_path . 'content/showcase/' . $cat_slug . '/' . $slug .'/';
 
 	if ($download == 1) :
 
