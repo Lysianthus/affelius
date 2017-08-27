@@ -53,10 +53,10 @@
 					<h4 class="footer-block__heading align-center">Affiliates</h4>
 					<nav class="footer-block__menu align-center">
 						<ul>
+							<li><a target="_blank" href="http://aesthetes.net">Aesthetes</a></li>
 							<li><a target="_blank" href="http://daily-lovejuice.net">Daily Lovejuice</a></li>
 							<li><a target="_blank" href="http://ellipsis.three-words.net">Ellipsis</a></li>
 							<li><a target="_blank" href="http://hellolittlered.org">Hello Little Red</a></li>
-							<li><a target="_blank" href="http://kikitaru.net">Kikitaru</a></li>
 							<li><a target="_blank" href="http://lovemore.xyz">Lovemore</a></li>
 							<li><a target="_blank" href="http://reverie.dragonebula.net">Resplendent Reverie</a></li>
 							<li><a target="_blank" href="http://vizune.com">Vizune</a></li>
