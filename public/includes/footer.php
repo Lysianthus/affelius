@@ -55,7 +55,6 @@
 						<ul>
 							<li><a target="_blank" href="http://aesthetes.net">Aesthetes</a></li>
 							<li><a target="_blank" href="http://daily-lovejuice.net">Daily Lovejuice</a></li>
-							<li><a target="_blank" href="http://ellipsis.three-words.net">Ellipsis</a></li>
 							<li><a target="_blank" href="http://hellolittlered.org">Hello Little Red</a></li>
 							<li><a target="_blank" href="http://lovemore.xyz">Lovemore</a></li>
 							<li><a target="_blank" href="http://reverie.dragonebula.net">Resplendent Reverie</a></li>

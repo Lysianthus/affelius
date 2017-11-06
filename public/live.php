@@ -70,7 +70,7 @@ $iframe = af_affelius_path . 'content/showcase/' . $cat_slug . '/' . $slug .'/';
 	</main> <!-- #content -->
 
 	<script src="<?php echo af_affelius_path; ?>assets/js/lib/jquery-2.1.4.min.js"></script>
-	<script src="<?php echo af_affelius_path; ?>assets/js/affelius-209a68d844.js"></script>
+	<script src="<?php echo af_affelius_path; ?>assets/js/affelius-1a8bb67c0f.js"></script>
 </body>
 
 </html>
