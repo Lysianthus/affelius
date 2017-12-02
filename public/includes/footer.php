@@ -73,7 +73,9 @@
 				</div> <!-- .footer-block -->
 				<div class="footer-block">
 					<h4 class="footer-block__heading align-center">Affelius on Twitter</h4>
-					<a class="twitter-timeline" data-lang="en" data-width="300" data-height="232" href="https://twitter.com/affelius">Tweets by affelius</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<div class="align-center">
+						<a class="twitter-timeline" data-lang="en" data-width="300" data-height="232" href="https://twitter.com/affelius">Tweets by affelius</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
 				</div> <!-- .footer-block -->
 			</div> <!-- .footer-blocks -->
 			<div id="colophon">
