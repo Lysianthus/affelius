@@ -1,6 +1,6 @@
 <?php
 
-require_once '/home/affeli/libraries/swiftmailer/lib/swift_required.php';
+require_once '/home/affelius/libraries/swiftmailer/lib/swift_required.php';
 include 'static/init.php';
 
 ?>
