@@ -29,10 +29,9 @@
 					<nav class="footer-block__menu">
 						<ul>
 							<li><a href="<?php echo af_affelius_path; ?>about/services">Services</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>about/faq">Frequently Asked Questions</a></li>
 							<li><a href="<?php echo af_affelius_path; ?>about/credits">Credits and Resources</a></li>
 							<li><a href="<?php echo af_affelius_path; ?>about/terms">Terms of Use</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>about/disclaimer">Disclaimer</a></li>
+							<li><a href="<?php echo af_affelius_path; ?>about/sitemap">Sitemap</a></li>
 						</ul>
 					</nav> <!-- .footer-block__menu -->
 				</div> <!-- .footer-block -->
@@ -42,7 +41,6 @@
 						<ul>
 							<li><a href="<?php echo af_affelius_path; ?>news/">News Archive</a></li>
 							<li><a href="<?php echo af_affelius_path; ?>contests/hidden-pages">Hidden Pages</a></li>
-							<li><a href="<?php echo af_affelius_path; ?>about/sitemap">Sitemap</a></li>
 							<li><a href="<?php echo af_affelius_path; ?>writings/articles/free-yet-reliable">Hosting</a></li>
 							<li><script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#028090', 'A020W3G');kofiwidget2.draw();</script> </li>
 					</nav> <!-- .footer-block__menu -->
