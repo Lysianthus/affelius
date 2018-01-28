@@ -1,6 +1,7 @@
 common
 dist
 src
+static/modules/dash.php
 static/pages/*
 *.db
 *.ini
