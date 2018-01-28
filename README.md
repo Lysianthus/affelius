@@ -16,7 +16,7 @@ This repository contains the content management system that runs Affelius.
 
 Enable Apache `rewrite_module`.
 
-### Local
+### Development
 
 * Node.js 4.2+
 * npm 3.3+
