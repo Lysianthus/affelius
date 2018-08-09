@@ -165,8 +165,8 @@ include 'static/init.php';
 										$name = stripslashes($_POST['name']);
 										$email = $_POST['email'];
 										$url = $_POST['url'];
-										$subject = $_POST['subject'];
-										$message = stripslashes($_POST['message']);
+										$subject = stripslashes($_POST['subject']);
+										$message = nl2br(stripslashes($_POST['message']));
 										$fav = stripslashes($_POST['fav']);
 
 										$body = "<p><b>Name:</b> $name</p>
