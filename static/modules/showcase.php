@@ -8,7 +8,7 @@ function check_if_showcase_content_exists() {
 	$row = $sth->fetch();
 
 	if ($row == false) {
-		header('Location:' . af_affelius_path . 'oops/404');
+		header('Location:' . af_affelius_path . 'oops/404?from=' . $_SERVER['REQUEST_URI']);
 		exit;
 	}
 }
