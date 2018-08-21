@@ -1,6 +1,10 @@
 common
 dist
-src
+src/*.html
+src/assets/*
+src/assets/js/lib
+!src/assets/js
+!src/assets/scss
 static/modules/dash.php
 static/pages/*
 *.db

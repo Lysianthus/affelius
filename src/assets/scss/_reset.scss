@@ -1,0 +1,40 @@
+/* reset */
+
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	@extend %relative-zero;
+	background-color: $white;
+	font-family: $fontDefault;
+	font-size: 100%;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+details summary {
+	cursor: ns-resize;
+}
+
+hr {
+	margin: 1em 0;
+	padding: 0;
+	//background-color: $lightgray;
+	background: linear-gradient(to right, $yellow, $orange, $purple, $orange, $yellow);
+	border: none;
+	width: 100%;
+	height: 1px;
+}
+
+abbr {
+	border-bottom: $lightgray 1px dotted;
+	cursor: help;
+}
+
+::selection {
+	background-color: $yellow;
+	color: $brown;
+}

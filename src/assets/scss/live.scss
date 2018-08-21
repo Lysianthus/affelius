@@ -1,0 +1,95 @@
+@import "_config.scss";
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	overflow-y: hidden;
+}
+
+#bar {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: $purple;
+	@include font($fontAlt, normal, normal, 1rem);
+	line-height: 1;
+	color: $white;
+}
+
+.bar__list {
+	margin: 0;
+	padding: 0 5%;
+	list-style: none;
+
+	li {
+		margin: 0;
+		padding: 20px 5%;
+		display: block;
+	}
+
+	&:after {
+		@extend %clearfix;
+	}
+}
+
+.bar__title {
+	float: left;
+}
+
+.bar__download {
+	float: right;
+	background-color: darken($purple, 15%);
+	transition: all 300ms linear;
+
+	&:hover, &:focus {
+		background-color: $yellow;
+		color: $brown;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+#content {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+
+	iframe {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		border: none;
+		outline: none;
+	}
+}
+
+.with-bar {
+	//height: calc(100vh - 40px - 1rem);
+	top: calc(1rem + 40px);
+}
+
+.without-bar {
+	top: 0;
+	//height: 100vh;
+}
+
+::selection {
+	background-color: $yellow;
+	color: $brown;
+}

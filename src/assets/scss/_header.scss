@@ -1,0 +1,79 @@
+/* header */
+
+#header {
+	margin: 0;
+	padding: 50px;
+	background-color: $white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#menu-toggler--hamburger {
+	margin: 0;
+	padding: 0;
+}
+
+#site-info {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#site-name {
+	margin: 0;
+	padding: 0;
+	@include font($fontHeading, normal, normal, 5rem);
+	color: $purple;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+#site-description {
+	margin: 1rem 0 0;
+	padding: 0;
+	@include font($fontDefault, normal, normal, 1.25rem);
+	color: $brown;
+}
+
+#social {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+.social-menu__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 1.25rem;
+
+	li {
+		margin: 0 10px;
+		padding: 0;
+		display: inline-block;
+	}
+
+	a {
+		color: $purple;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#header {
+		display: block;
+	}
+
+	#menu-toggler--hamburger, #site-info, #social {
+		margin-bottom: 25px;
+		display: block;
+		text-align: center;
+	}
+
+	#menu-toggler--hamburger {
+		margin: 0 auto;
+	}
+}

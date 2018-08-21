@@ -1,0 +1,204 @@
+/* menu */
+
+#menu-wrapper {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	a {
+		transition: all 300ms linear;
+	}
+}
+
+#main-menu {
+	margin: 0;
+	padding: 0;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.sitely-menu {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: auto;
+	left: 0;
+	z-index: 9999;
+	list-style: none;
+	background-color: $orange;
+	@include font($fontAlt, normal, normal, 0);
+	text-align: right;
+	color: $white;
+
+	> li {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		width: 200px;
+
+		> a {
+			margin: 0;
+			padding: 20px;
+			display: block;
+			width: 100%;
+			font-size: 1rem;
+			text-align: center;
+			line-height: 1;
+			color: inherit;
+
+			&:hover, &:focus {
+				background-color: $yellow;
+				color: $brown;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
+.showcase-menu {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: calc(1rem + 40px);
+	right: auto;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+	overflow-y: auto;
+	width: 300px;
+	background-color: darken($purple, 15%);
+	list-style: none;
+	line-height: 1;
+	text-align: center;
+	color: $white;
+
+	@media only screen and (max-width: 768px) {
+		/* .sitely-menu disappears, so... */
+		top: 0;
+	}
+
+	@media only screen and (max-width: 480px) {
+		width: 100%;
+	}
+}
+
+.showcase-menu__item {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: block;
+
+	&.mobile {
+		display: none;
+
+		@media only screen and (max-width: 768px) {
+			display: block;
+		}
+	}
+}
+
+.showcase-menu__item__heading {
+	margin: 0;
+	padding: 20px;
+	display: block;
+	cursor: pointer;
+	background-color: darken($purple, 15%);
+	line-height: 1;
+	color: $white;
+
+	&:active, &:focus {
+		outline: none;
+		background-color: inherit;
+		color: inherit;
+	}
+
+	span, b {
+		margin: 0;
+		padding: 0;
+		display: block;
+		float: left;
+	}
+
+	b {
+		margin-left: 50px;
+		line-height: 3.125rem;
+		vertical-align: middle;
+		@include font($fontAlt, normal, normal, 1rem);
+	}
+
+	&:after {
+		@extend %clearfix;
+	}
+
+}
+
+.showcase-menu__item__list {
+	margin: 0;
+	padding: 0;
+	display: none;
+	width: inherit;
+	background-color: $purple;
+	list-style: none;
+	@include font($fontAlt, normal, normal, 1rem);
+	text-align: left;
+
+	> li {
+		margin: 0;
+		padding: 0;
+		transition: all 300ms linear;
+
+		> a {
+			margin: 0;
+			padding: 20px;
+			display: block;
+			color: $white;
+		}
+
+		&:hover, &:focus {
+			background-color: $yellow;
+
+			a {
+				color: $brown;
+			}
+		}
+	}
+}
+
+span[class*="flaticon-"]:before {
+	margin: 0 !important;
+	padding: 0 !important;
+	font-size: 3.125rem !important;
+	color: $white;
+}
+
+#menu-toggler--text {
+	display: none;
+
+	@media only screen and (max-width: 480px) {
+		display: block;
+	}
+}
+
+.push {
+	z-index: 0;
+	transform: translateX(300px) translateY(calc(1rem + 40px));
+
+	@media only screen and (max-width: 768px) {
+		transform: translateX(300px) translateY(0); /* since .sitely-menu disappears */
+	}
+
+	@media only screen and (max-width: 480px) {
+		transform: translateX(100%) translateY(0);
+	}
+}

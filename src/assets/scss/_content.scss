@@ -1,0 +1,152 @@
+/* content */
+
+#content {
+	margin: 0;
+	padding: 0;
+	background-color: $white;
+}
+
+.heading {
+	margin: 0;
+	padding: 50px 5%;
+	background: url('../images/boxes--pale_bud.png') top center repeat;
+	background-color: $orange;
+	@include font($fontHeading, normal, normal, 3rem);
+	text-align: center;
+
+	> span {
+		margin: 0 auto;
+		padding: 25px;
+		display: inline-block;
+		background-color: $purple;
+		color: $white;
+
+		&:after {
+			content: '';
+			margin: 25px auto 0 -50px;
+			padding: 0;
+			display: block;
+			width: calc(100% + 100px);
+			height: 10px;
+			background-color: $white;
+		}
+	}
+}
+
+.subheading {
+	margin: 50px 0 0; /* margin-bottom: 0, because .grid margin-top: 100px */
+	padding: 0 5%;
+	line-height: 1;
+	@include font($fontAlt, normal, normal, 2rem);
+	text-align: center;
+	color: $brown;
+
+	&:before {
+		margin: 0 0 25px;
+	}
+
+	&:after {
+		margin: 25px 0 0 auto;
+	}
+
+	&:before, &:after {
+		content: '';
+		padding: 0;
+		display: block;
+		width: 40%;
+		height: 5px;
+		background-color: $purple;
+	}
+}
+
+
+/* quick feed */
+
+.quick-feed {
+	margin: 0;
+	padding: 100px 5%;
+	position: relative;
+	background: url('../images/dotted.png') center repeat;
+	
+
+	&:before {
+		content: '';
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: 5px;
+		//background: repeating-linear-gradient(to right, darken($yellow, 10%), darken($yellow, 10%) 10px, $purple 10px, $purple 20px, darken($yellow, 10%) 20px);
+		background: linear-gradient(to right, darken($yellow, 10%) 50%, $brown 50%);
+		display: block;
+	}
+
+	&:after {
+		@extend %clearfix;
+	}
+}
+
+.quick-feed__heading {
+	margin: 0;
+	padding: 0 0 50px;
+	width: 30%;
+	float: left;
+	@include font($fontHeading, normal, normal, 3rem);
+	text-align: right;
+	transform: rotate(-5deg);
+	color: $purple;
+
+	&:after {
+		content: '';
+		margin: -0.5em 0 0;
+		padding: 0;
+		display: block;
+		width: 100%;
+		height: 0.5em;
+		//background: linear-gradient(to right, rgba($purple, 0), $purple);
+		background-color: $orange;
+	}
+
+	@media only screen and (max-width: 767px) {
+		width: 100%;
+		float: none;
+	}
+}
+
+.quick-feed__list {
+	margin: 0 0 0 30%;
+	padding: 0 0 0 25px;
+	width: 70%;
+	list-style: none;
+	@include font($fontAlt, normal, normal, 1.25rem);
+
+	li {
+		margin: 0;
+		padding: 10px 0;
+		display: block;
+		border-bottom: $purple 3px solid;
+	}
+
+	a {
+		@include font($fontAlt, normal, normal, inherit);
+		text-decoration: none;
+		text-transform: uppercase;
+		//letter-spacing: 3px;
+		color: $purple;
+		transition: all 300ms linear;
+
+		&:hover, &:focus {
+			color: $orange;
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		margin-left: 0;
+		padding: 0;
+		width: 100%;
+		float: none;
+	}
+}

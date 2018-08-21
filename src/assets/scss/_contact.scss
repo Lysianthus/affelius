@@ -1,0 +1,93 @@
+/* contact form */
+
+.form {
+	margin: 0 auto;
+	padding: 0;
+	width: 800px;
+	max-width: 100%;
+	@include font($fontDefault, normal, normal, 1.1rem);
+	line-height: 2;
+
+	a {
+		@extend %line-link-fx;
+	}
+
+	label {
+		margin: 0 0 20px;
+		padding: 0 20px;
+		display: block;
+		@include font($fontDefault, bold, normal, 1.1rem);
+	}
+
+	input, select, textarea {
+		margin: 0;
+		padding: 20px;
+		display: block;
+		width: 100%;
+		outline: none;
+		background-color: $yellow;
+		border: none;
+		border-top: $purple 5px solid;
+		@include font($fontDefault, normal, normal, 2rem);
+		transition: all 300ms ease-in-out;
+		color: $brown;
+
+		&:focus {
+			border-top: $orange 10px solid;
+		}
+	}
+
+	select {
+		appearance: none;
+		background: url('../images/chevron-arrow-down.png') $yellow no-repeat;
+		background-position: right 20px center;
+	}
+
+	button {
+		margin: 0;
+		padding: 20px 50px;
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+		outline: none;
+		background-color: $purple;
+		border: none;
+		border-bottom: darken($purple, 15%) 5px solid;
+		@include font($fontAlt, normal, normal, 1.5rem);
+		color: $white;
+		transition: all 300ms linear;
+
+		> span[class^="fa"] {
+			margin-right: 10px;
+		}
+
+		&:focus, &:active {
+			background-color: darken($purple, 15%);
+		}
+	}
+
+	::placeholder {
+		color: $orange;
+	}
+
+	.info {
+		margin: 1em 0 0;
+		padding: 0 20px;
+		@include font($fontDefault, normal, italic, 1.1rem);
+	}
+}
+
+.form__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		margin: 0 0 100px;
+		padding: 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

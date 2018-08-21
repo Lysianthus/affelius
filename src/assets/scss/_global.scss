@@ -1,0 +1,82 @@
+/* global */
+
+#wrapper {
+	margin: 0;
+	padding: 20px;
+	position: relative;
+	z-index: 9999;
+	background-color: $yellow !important; /* I have to add !important because it won't show up on Firefox */
+	transition: all 0.5s ease-in;
+
+	@media only screen and (max-width: 480px) {
+		padding: 10px;
+	}
+}
+
+.no-overflow {
+	overflow: hidden;
+}
+
+.overflow {
+	overflow: auto;
+}
+
+.invisible {
+	color: $white;
+}
+
+.label {
+	padding: 5px;
+	border: $lightgray 1px solid;
+	border-radius: 5px;
+	@include font($fontAlt, normal, normal, 0.8em);
+	text-transform: uppercase;
+}
+
+.bordered {
+	padding: 5px;
+	border: $purple 5px solid;
+	transition: all 300ms linear;
+
+	&:hover, &:focus {
+		border-color: $orange;
+	}
+}
+
+.table-container {
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+.table {
+	margin: 0 auto;
+	padding: 0;
+	border-spacing: 2px;
+	border: 2px solid $persiangreen;
+
+	th {
+		background-color: $persiangreen;
+		color: $white;
+	}
+}
+
+.table--striped {
+	tr:nth-of-type(even) td {
+		background-color: $bggray;
+	}
+}
+
+
+/* text alignment */
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}

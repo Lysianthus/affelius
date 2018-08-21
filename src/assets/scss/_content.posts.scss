@@ -1,0 +1,303 @@
+/* posts */
+
+.posts {
+	margin: 0;
+	padding: 0;
+}
+
+.articles {
+	margin: 0;
+	padding: 100px 5%;
+}
+
+.article {
+	margin: 0 auto 200px; // 200px separator between articles
+	padding: 0;
+	width: 960px;
+	max-width: 100%;
+	background-color: $white;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.article__meta {
+	margin: 0;
+	padding: 0 0 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	border-bottom: $purple 5px solid;
+	@include font($fontAlt, normal, normal, 1rem);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: $brown;
+
+	@media only screen and (max-width: 640px) {
+		display: block;
+
+		> p {
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+.article__date {
+	margin: 0;
+	padding: 0;
+}
+
+.article__author {
+	margin: 0;
+	padding: 0;
+}
+
+.article__comments-link {
+	margin: 0;
+	padding: 0;
+
+	a {
+		text-decoration: none;
+		color: $purple;
+		transition: all 300ms linear;
+
+		&:hover, &:focus {
+			color: $orange;
+		}
+	}
+}
+
+.article__avatar {
+	margin: 25px 0 25px 25px;
+	padding: 0;
+	float: right;
+
+	img {
+		border-radius: 50px;
+	}
+}
+
+.article__subject {
+	margin: 0;
+	padding: 25px 0;
+	@include font($fontDefault, bold, normal, 3rem);
+	line-height: 1.25;
+	color: $purple;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+		transition: all 300ms linear;
+
+		&:hover, &:focus {
+			color: $orange;
+		}
+	}
+}
+
+.article__content {
+	margin: 0;
+	padding: 0;
+	@include font($fontDefault, normal, normal, 1.1rem); // Mercury SSm A looks best at 1.1rem+
+	//text-align: justify;
+	line-height: 2;
+
+	h3 {
+		@include font($fontDefault, bold, normal, 1.5em);
+	}
+
+	h4 {
+		@include font($fontAlt, normal, normal, 1.25em);
+	}
+
+	a {
+		@extend %line-link-fx;
+	}
+
+	a.read-more, a.button {
+		&:before, &:after {
+			display: none;
+		}
+	}
+
+	u, ins {
+		border-bottom: $lightgray 1px solid;
+		text-decoration: none;
+	}
+
+	blockquote {
+		padding: 20px;
+		border: $lightgray 1px solid;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	code, kbd, tt, pre {
+		@include font($fontMono, normal, normal, inherit);
+	}
+
+	pre {
+		word-wrap: normal;
+		overflow-x: auto;
+	}
+
+	input, select, textarea {
+		margin: 0;
+		padding: 20px;
+		display: block;
+		width: 100%;
+		outline: none;
+		background-color: $yellow;
+		border: none;
+		border-bottom: $purple 5px solid;
+		@include font($fontDefault, normal, normal, 2rem);
+		transition: all 300ms ease-in-out;
+		color: $brown;
+
+		&:focus {
+			border-bottom: $orange 10px solid;
+		}
+	}
+
+	button, a.button {
+		margin: 0;
+		padding: 20px 50px;
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+		outline: none;
+		background-color: $purple;
+		border: none;
+		border-bottom: darken($purple, 15%) 5px solid;
+		@include font($fontAlt, normal, normal, 1.5rem);
+		color: $white;
+		transition: all 300ms linear;
+
+		> span[class^="fa"] {
+			margin-right: 10px;
+		}
+
+		&:focus, &:active {
+			background-color: darken($purple, 15%);
+		}
+	}
+}
+
+a.read-more {
+	margin: 1em 0;
+	padding: 10px 50px;
+	display: inline-block;
+	background-color: $orange;
+	border: none;
+	border-bottom: darken($orange, 10%) 5px solid;
+	@include font($fontAlt, normal, normal, inherit);
+	text-decoration: none;
+	color: $white;
+	transition: all 300ms linear;
+
+	> span[class^="fa"] {
+		margin-left: 10px;
+		transition: all 300ms ease-in-out;
+	}
+
+	&:hover, &:focus {
+		background-color: darken($orange, 10%);
+		color: $white;
+
+		> span[class^="fa"] {
+			margin-left: 20px;
+		}
+	}
+}
+
+.article__comments {
+	margin: 0;
+	padding: 100px 0;
+}
+
+.article__comments__heading {
+	margin: 0;
+	padding: 0;
+	@include font($fontDefault, bold, normal, 2.5rem);
+	display: none;
+}
+
+.pagination {
+	margin: 0;
+	padding: 0;
+}
+
+.pagination__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: $orange;
+
+	&:after {
+		@extend %clearfix;
+	}
+}
+
+.pagination__list__item {
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: left;
+	width: 50%;
+
+	a {
+		margin: 0;
+		padding: 25px;
+		display: block;
+		@include font($fontAlt, normal, normal, 1rem);
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		transition: all 300ms linear;
+	}
+
+	&.previous {
+		a {		
+			background-color: $yellow;
+			color: $brown;
+			
+			&:hover, &:focus {
+				background-color: darken($yellow, 10%);
+			}
+		}
+	}
+
+	&.next {
+		float: right;
+		
+		a {
+			background-color: $purple;
+			color: $white;
+
+			&:hover, &:focus {
+				background-color: darken($purple, 15%);
+			}
+		}
+	}
+
+	@media only screen and (max-width: 640px) {
+		width: 100%;
+		float: none;
+	}
+}
+
+#discuss {
+	margin: 100px auto 0;
+	padding: 0;
+	width: 960px;
+	max-width: 100%;
+
+	a {
+		@extend %line-link-fx;
+	}
+}

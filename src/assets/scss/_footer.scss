@@ -1,0 +1,131 @@
+/* footer */
+
+#footer {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-blocks {
+	background-color: $orange;
+	color: $white;
+
+	&:first-of-type {
+		.footer-block {
+			width: calc(100% / 4);
+
+			@media only screen and (max-width: 767px) {
+				width: 100%;
+			}
+		}
+	}
+
+	&:nth-of-type(2) {
+		background-color: $purple;
+
+		.footer-block {
+			width: calc(100% / 3);
+
+			@media only screen and (max-width: 767px) {
+				width: 100%;
+			}
+		}
+	}
+
+	&:after {
+		@extend %clearfix;
+	}
+}
+
+.footer-block {
+	margin: 0;
+	padding: 25px 5%;
+	float: left;
+	@include font($fontDefault, normal, italic, 0.8rem);
+
+	p {
+		line-height: 1.5;
+	}
+
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+.footer-block__heading {
+	margin: 0 0 3em; // .footer-block__menu li margin-bottom * 2
+	padding: 0;
+	@include font($fontAlt, normal, normal, 0.8rem);
+	//text-align: center;
+	//text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.footer-block__menu {
+	margin :0;
+	padding: 0;
+	@include font($fontAlt, normal, normal, 1rem);
+	//text-align: center;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			margin: 0 0 1.5em;
+			padding: 0;
+			display: block;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+#colophon {
+	margin: 0;
+	padding: 25px;
+	background-color: $white;
+	@include font($fontDefault, normal, normal, 1.1rem);
+	line-height: 1.5;
+	text-align: center;
+
+	a {
+		@extend %line-link-fx;
+	}
+}
+
+#scrop {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	z-index: 9999;
+	right: 50px;
+	bottom: 50px;
+	display: none;
+
+	a {
+		margin: 0;
+		padding: 10px;
+		display: block;
+		border-radius: 5px; //maximum
+		background-color: rgba($yellow, 0.8);
+		line-height: 1;
+		font-size: 3rem;
+		text-decoration: none;
+		color: $purple;
+	}
+
+	@media only screen and (max-width: 480px) {
+		right: auto;
+		bottom: 20px;
+		left: 20px;
+
+		a {
+			font-size: 2rem;
+		}
+	}
+}

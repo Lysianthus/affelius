@@ -1,0 +1,152 @@
+/**
+ * Fonts
+ *
+ * It is recommended to only use 2 webfonts.
+ */
+
+ @font-face {
+ 	font-family: 'Andrea';
+ 	font-weight: normal;
+ 	font-style: normal;
+ 	src: url('../fonts/Andrea.woff') format('woff');
+ 	font-display: swap;
+ }
+
+ @font-face {
+ 	font-family: 'Mensch';
+ 	font-weight: normal;
+ 	font-style: normal;
+ 	src: url('../fonts/Mensch.woff') format('woff');
+ 	font-display: swap;
+ }
+
+$fontDefault: 'Mercury Ssm A', serif;
+$fontAlt: 'Mensch', sans-serif;
+$fontHeading: 'Andrea', cursive;
+$fontMono: 'Hasklig', 'Source Code Pro', monospace;
+
+
+/* Colors */
+
+/*
+$teal: #5FC8D1;
+$redorange: #F3643C;
+$darkblue: #586574;
+
+$teal: #16A6B6;
+*/
+
+/*
+$peach: #F5F1E9;
+$salmon: #FF6860;
+$brown: #414141;
+$fish: #CCDFCC;
+$navy: #0E6670;
+
+
+$purple: #BF43EA;
+$yellow: #F5FDB2;
+$orange: #F5986E;
+$brown: #855741;
+*/
+
+
+/* RGB */
+$seablue: rgba(5, 102, 141, 1);
+$metallicseaweed: rgba(2, 128, 144, 1);
+$persiangreen: rgba(0, 168, 150, 1);
+$carribeangreen: rgba(2, 195, 154, 1);
+$palebud: rgba(240, 243, 189, 1);
+
+$purple: $metallicseaweed;
+$brown: $persiangreen;
+$orange: $carribeangreen;
+$yellow: $palebud;
+
+$gray: #999;
+$lightgray: #DDD;
+$bggray: #F1F1F1;
+$palestgray: #EEE;
+
+$white: #FFF;
+$black: #000;
+
+
+/* Reusable Styles */
+
+%relative-zero {
+	margin: 0;
+	padding: 0;
+}
+
+%clearfix {
+	@extend %relative-zero;
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+/**
+ * Mixins
+ * All mixins that only return prefixed code has been removed in
+ * favor of Autoprefixer on Sublime Text 2. :)
+ */
+
+@mixin font($name, $weight, $style, $size) {
+	font-family: $name;
+	font-weight: $weight;
+	font-style: $style;
+	font-size: $size;
+}
+
+
+/* Dependent Reusable Styles */
+
+%line-link-fx {
+	//background-color: $yellow;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	/*border-bottom: $teal--lighten 2px solid;*/
+	text-decoration: none;
+	color: $purple;
+	transition: color 300ms ease-in-out 300ms;
+
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: $purple;
+		transform: scale3d(0,1,1);
+		transform-origin: center left;
+		transition: all 300ms ease-in-out 0ms;
+	}
+
+	&:before {
+		transition-delay: 0ms;
+	}
+
+	&:after {
+		background-color: $orange;
+		transition-delay: 300ms;
+	}
+
+	&:hover, &:focus {
+		color: $orange;
+
+		&:before, &:after {
+			transform: scale3d(1,1,1);
+		}
+
+		&:before {
+			//transition-delay: 300ms;
+		}
+	}
+}
