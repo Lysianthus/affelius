@@ -1,13 +1,15 @@
 <?php
 
 /**
- * Check if article exists. Else, return 404 error.
+ * Check if article exists
  */
 function check_if_article_exists() {
 	$sth = archive_init();
+	$row = $sth->fetch();
 
-	if ($sth == false) {
+	if ($row == false) {
 		header('Location:' . af_affelius_path . 'oops/404');
+		exit;
 	}
 }
 

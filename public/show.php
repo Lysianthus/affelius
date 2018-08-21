@@ -2,6 +2,8 @@
 
 include 'static/init.php';
 
+check_if_showcase_content_exists();
+
 inc_header();
 
 ?>

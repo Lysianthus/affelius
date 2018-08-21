@@ -1,13 +1,15 @@
 <?php
 
 /**
- * Check if _ exists
+ * Check if showcase content exists
  */
 function check_if_showcase_content_exists() {
 	$sth = showcase_content_init();
+	$row = $sth->fetch();
 
-	if ($sth == false) {
-		header('Location:'.af_affelius_path.'oops/404');
+	if ($row == false) {
+		header('Location:' . af_affelius_path . 'oops/404');
+		exit;
 	}
 }
 

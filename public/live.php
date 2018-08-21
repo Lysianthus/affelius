@@ -2,6 +2,8 @@
 
 include 'static/init.php';
 
+check_if_showcase_content_exists();
+
 $sth = showcase_content_init();
 
 $row = $sth->fetch();

@@ -77,7 +77,7 @@
 				</div> <!-- .footer-block -->
 			</div> <!-- .footer-blocks -->
 			<div id="colophon">
-				<p>Copyright &copy; 2013&ndash;<?php date_default_timezone_set('Asia/Manila'); echo date("Y"); ?> Affelius &bull; <a href="<?php echo af_affelius_path; ?>about/versions">Affelius Version 4</a> &bull; Under the <a target="_blank" href="https://asclaria.org">Asclaria</a> Umbrella &bull; <a data-scroll href="#wrapper">▲ Back to Top</a></p>
+				<p>&copy; 2013&ndash;<?php date_default_timezone_set('Asia/Manila'); echo date("Y"); ?> Affelius &bull; <a href="<?php echo af_affelius_path; ?>about/versions">Affelius Version 4</a> &bull; Under the <a target="_blank" href="https://asclaria.org">Asclaria</a> Umbrella &bull; <a data-scroll href="#wrapper">▲ Back to Top</a></p>
 			</div> <!-- #colophon -->
 		</footer> <!-- #footer -->
 

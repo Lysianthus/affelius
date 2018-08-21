@@ -2,6 +2,8 @@
 
 include 'static/init.php';
 
+check_if_article_exists();
+
 inc_header();
 
 ?>
