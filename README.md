@@ -16,4 +16,4 @@ Enable Apache `rewrite_module`.
 
 ### Development
 
-* Sass 1.13+
+* Sass 3.4+
