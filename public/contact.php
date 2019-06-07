@@ -250,7 +250,7 @@ include 'static/init.php';
 								</li>
 								<li>
 									<label for="fav"><span class="fa fa-paw"></span> What is your favorite color? <small>(optional)</small></label>
-									<input name="fav" id="favcolor" placeholder="turqouise" />
+									<input name="fav" id="favcolor" placeholder="turquoise" />
 								</li>
 								<li class="align-center">
 									<button name="send" type="submit"><span class="fa fa-send-o"></span> Send Message</button>
