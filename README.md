@@ -8,11 +8,9 @@ This repository contains the content management system that runs Affelius.
 
 ### Server
 
-* Apache 2.4+
+* LiteSpeed (latest)
 * PHP 7.2+
 * MariaDB 10.1+
-
-Enable Apache `rewrite_module`.
 
 ### Development
 
