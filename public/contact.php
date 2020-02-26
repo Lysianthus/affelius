@@ -188,7 +188,7 @@ include 'static/init.php';
 										$message->setSubject("[Affelius] $subject");
 										$message->setBody($body, 'text/html');
 										$message->setTo('hello@affeli.us');
-										$message->setFrom('no-reply@affeli.us');
+										$message->setFrom(array('no-reply@affeli.us' => 'Affelius'));
 
 										$numSent = $mailer->send($message);
 
