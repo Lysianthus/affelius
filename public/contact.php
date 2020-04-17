@@ -162,12 +162,12 @@ include 'static/init.php';
 									$security = $_POST['security'];
 
 									if ($security == 'yellow') :
-										$name = stripslashes($_POST['name']);
-										$email = $_POST['email'];
-										$url = $_POST['url'];
-										$subject = stripslashes($_POST['subject']);
-										$message = nl2br(stripslashes($_POST['message']));
-										$fav = stripslashes($_POST['fav']);
+										$name = filter_var(stripslashes($_POST['name']), FILTER_SANITIZE_STRING);
+										$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+										$url = filter_var($_POST['url'], FILTER_SANITIZE_URL);
+										$subject = filter_var(stripslashes($_POST['subject']), FILTER_SANITIZE_STRING);
+										$message = nl2br(filter_var(stripslashes($_POST['message']), FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+										$fav = filter_var(stripslashes($_POST['fav']), FILTER_SANITIZE_STRING);
 
 										$body = "<p><b>Name:</b> $name</p>
 <p><b>Email Address:</b> $email</p>
