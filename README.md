@@ -8,9 +8,9 @@ This repository contains the content management system that runs Affelius.
 
 ### Server
 
-* LiteSpeed (latest)
-* PHP 7.2+
-* MariaDB 10.1+
+* a web server that supports `.htaccess`
+* PHP (latest)
+* MariaDB (latest)
 
 ### Development
 
