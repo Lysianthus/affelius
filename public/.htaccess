@@ -1,5 +1,9 @@
 RewriteEngine on
 
+# Redirect
+
+RewriteRule ^designs/livejournal/(.*)$ designs/livejournal-layouts/$1 [R=301,L]
+
 # Remove PHP extensions
 
 RewriteCond %{REQUEST_FILENAME} !-d
