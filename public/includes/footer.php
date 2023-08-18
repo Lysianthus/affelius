@@ -89,7 +89,7 @@
 	<script src="<?php echo af_affelius_path; ?>assets/js/lib/jquery-2.1.4.min.js"></script>
 	<script src="<?php echo af_affelius_path; ?>assets/js/lib/prism.js"></script>
 	<script src="<?php echo af_affelius_path; ?>assets/js/lib/smooth-scroll.min.js"></script>
-	<script src="<?php echo af_affelius_path; ?>assets/js/affelius-1a8bb67c0f.js"></script>
+	<script src="<?php echo af_affelius_path; ?>assets/js/affelius-9e420afe45.js"></script>
 	<script id="dsq-count-scr" src="//afffelius.disqus.com/count.js" async></script>
 </body>
 
