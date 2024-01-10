@@ -32,7 +32,7 @@ function inc_footer() {
  *
  * @return array $gets
  */
-function get_from_url() {		
+function get_from_url() {
 	$get_cat = $_GET['cat'];
 	$get_subcat = $_GET['subcat'];
 	$get_slug = $_GET['slug'];

@@ -180,7 +180,7 @@ include 'static/init.php';
 
 										// Swiftmailer
 
-										$transport = Swift_SmtpTransport::newInstance('mail.affeli.us', 25);
+										$transport = Swift_SmtpTransport::newInstance('mail.affeli.us', 587);
 										$mailer = Swift_Mailer::newInstance($transport);
 
 										$message = Swift_Message::newInstance();

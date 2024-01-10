@@ -3,6 +3,7 @@ RewriteEngine on
 # Redirect
 
 RewriteRule ^designs/livejournal/(.*)$ designs/livejournal-layouts/$1 [R=301,L]
+RewriteRule ^designs/templates/(.*)$ designs/website-templates/$1 [R=301,L]
 
 # Remove PHP extensions
 
