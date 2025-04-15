@@ -56,7 +56,7 @@
 							<li><a target="_blank" href="http://dicesuki.com">Dicesuki</a></li>
 							<li><a target="_blank" href="http://hellolittlered.org">Hello Little Red</a></li>
 							<li><a target="_blank" href="http://reverie.dragonebula.net">Resplendent Reverie</a></li>
-							<li><a target="_blank" href="http://vizune.com">Vizune</a></li>
+							<li><a target="_blank" href="http://vizune.neocities.org">Vizune</a></li>
 						</ul>
 					</nav> <!-- .footer-block -->
 				</div> <!-- .footer-block -->
